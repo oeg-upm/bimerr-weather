@@ -132,6 +132,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
     </owl:ObjectProperty>
@@ -142,6 +143,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isObservedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between an ObservableProperty and the Sensor able to observe it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">is observed by</rdfs:label>
     </owl:ObjectProperty>
@@ -152,6 +154,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between an Observation and the Sensor which made the Observations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">made by sensor</rdfs:label>
     </owl:ObjectProperty>
@@ -162,6 +165,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeObservation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between a Sensor and an Observation made by the Sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">made observation</rdfs:label>
     </owl:ObjectProperty>
@@ -172,6 +176,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">observed property</rdfs:label>
     </owl:ObjectProperty>
@@ -182,6 +187,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">observes</rdfs:label>
     </owl:ObjectProperty>
@@ -192,8 +198,19 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/implements">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between an entity that implements a Procedure in some executable way and the Procedure (an algorithm, procedure or method).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
         <rdfs:label xml:lang="en">implements</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/isFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/isFeatureOfInterest">
+        <rdfs:comment xml:lang="en">A relation between a FeatureOfInterest and an Observation about it or an Actuation acting on it, or an act of Sampling that sampled it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is feature of interest</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -202,6 +219,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/wasOriginatedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between an Observation and the Stimulus that originated it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
         <rdfs:label xml:lang="en">was originated by</rdfs:label>
     </owl:ObjectProperty>
@@ -211,6 +229,7 @@
     <!-- https://bimerr.iot.linkeddata.es/def/weat#locatedIn -->
 
     <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weat#locatedIn">
+        <rdfs:comment xml:lang="en">Relation between Sensor and AdministrativeArea that locates it in a City and a Country.</rdfs:comment>
         <rdfs:label xml:lang="en">located in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -219,6 +238,7 @@
     <!-- https://saref.etsi.org/core/controlsProperty -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/controlsProperty">
+        <rdfs:comment xml:lang="en">A relationship specifying the property that can be controlled by a certain device</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">controls property</rdfs:label>
     </owl:ObjectProperty>
@@ -228,6 +248,7 @@
     <!-- https://saref.etsi.org/core/hasMeasurement -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasMeasurement">
+        <rdfs:comment xml:lang="en">A relationship between a feature of interest and a measurement about it</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">has measurement</rdfs:label>
     </owl:ObjectProperty>
@@ -238,6 +259,7 @@
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasProperty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">A relationship between a feature of interest and a property of that feature</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
         <rdfs:label xml:lang="en">has property</rdfs:label>
     </owl:ObjectProperty>
@@ -247,17 +269,9 @@
     <!-- https://saref.etsi.org/core/isControlledByDevice -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isControlledByDevice">
+        <rdfs:comment xml:lang="en">A relationship specifying the devices that can control a certain property</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">is controlled by device</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://saref.etsi.org/core/isFeatureOfInterest -->
-
-    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isFeatureOfInterest">
-        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-        <rdfs:label xml:lang="en">is feature of interest</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -265,6 +279,7 @@
     <!-- https://saref.etsi.org/core/isMeasuredByDevice -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredByDevice">
+        <rdfs:comment xml:lang="en">A relationship specifying the devices that can measure a certain property</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">is measured by device</rdfs:label>
     </owl:ObjectProperty>
@@ -274,6 +289,7 @@
     <!-- https://saref.etsi.org/core/isMeasuredIn -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredIn">
+        <rdfs:comment xml:lang="en">A relationship identifying the unit of measure used for a certain entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">is measured in</rdfs:label>
     </owl:ObjectProperty>
@@ -283,6 +299,7 @@
     <!-- https://saref.etsi.org/core/isMeasurementOf -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasurementOf">
+        <rdfs:comment xml:lang="en">A relationship between a measurement and the feature of interest whose quality was measured</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">is measurement of</rdfs:label>
     </owl:ObjectProperty>
@@ -292,6 +309,7 @@
     <!-- https://saref.etsi.org/core/isPropertyOf -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isPropertyOf">
+        <rdfs:comment xml:lang="en">A relationship between a property and the feature of interest it belongs to</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">is property of</rdfs:label>
     </owl:ObjectProperty>
@@ -301,6 +319,7 @@
     <!-- https://saref.etsi.org/core/makeMeasurement -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/makeMeasurement">
+        <rdfs:comment xml:lang="en">A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">make measurement</rdfs:label>
     </owl:ObjectProperty>
@@ -310,6 +329,7 @@
     <!-- https://saref.etsi.org/core/measurementMadeBy -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measurementMadeBy">
+        <rdfs:comment xml:lang="en">A relation between a measurement and the device that made it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">measurement made by</rdfs:label>
     </owl:ObjectProperty>
@@ -319,6 +339,7 @@
     <!-- https://saref.etsi.org/core/measuresProperty -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measuresProperty">
+        <rdfs:comment xml:lang="en">A relationship specifying the property that can be measured by a certain device</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">measures property</rdfs:label>
     </owl:ObjectProperty>
@@ -328,6 +349,7 @@
     <!-- https://saref.etsi.org/core/relatesToMeasurement -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToMeasurement">
+        <rdfs:comment xml:lang="en">A relationship between a property and the measurements it relates to</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">relates to measurement</rdfs:label>
     </owl:ObjectProperty>
@@ -337,6 +359,7 @@
     <!-- https://saref.etsi.org/core/relatesToProprety -->
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToProprety">
+        <rdfs:comment xml:lang="en">A relationship between a measurement and the property it relates to</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">relates to property</rdfs:label>
     </owl:ObjectProperty>
@@ -730,6 +753,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/core/FeatureOfInterest">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/isFeatureOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasMeasurement"/>
                 <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
             </owl:Restriction>
@@ -738,12 +767,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
                 <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isFeatureOfInterest"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
