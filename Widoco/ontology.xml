@@ -8,16 +8,16 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:weat="https://bimerr.iot.linkeddata.es/def/weat#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://bimerr.iot.linkeddata.es/def/weat">
-        <dc:decription xml:lang="en">Ontology for weather phenomena and exterior conditions</dc:decription>
+        <dc:decription xml:lang="en">Ontology for weather phenomena and exterior conditions.</dc:decription>
         <dc:title xml:lang="en">BIMERR Weather Ontology</dc:title>
         <terms:creator>Salvador González Gerpe linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe</terms:creator>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <preferredNamespacePrefix>weat</preferredNamespacePrefix>
-        <preferredNamespaceUri>https://bimerr.iot.linkeddata.es/def/weat</preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>weat</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://bimerr.iot.linkeddata.es/def/weat</vann:preferredNamespaceUri>
     </owl:Ontology>
     
 
@@ -62,6 +62,20 @@
     
 
 
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
     <!-- http://schema.org/domainIncludes -->
 
 
@@ -90,20 +104,6 @@
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weat#preferredNamespacePrefix -->
-
-
-    <owl:AnnotationProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weat#preferredNamespacePrefix"/>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weat#preferredNamespaceUri -->
-
-
-    <owl:AnnotationProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weat#preferredNamespaceUri"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -121,6 +121,14 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="en">The relation between something and the point, 
+ or other geometrical thing in space, where it is.  For example, the realtionship between
+ a radio tower and a Point with a given lat and long.
+ Or a relationship between a park and its outline as a closed arc of points, or a road and
+ its location as a arc (a sequence of points).
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
+ an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
         <rdfs:label xml:lang="en">location</rdfs:label>
     </owl:ObjectProperty>
@@ -132,41 +140,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/hasResult -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasResult">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:label xml:lang="en">has result</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/inverseOfobservedProperty -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/inverseOfobservedProperty">
-        <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:label xml:lang="en">inverse of observed property</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/isFeatureOfInterestOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isFeatureOfInterestOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:label xml:lang="en">is feature of interest of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -176,19 +152,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isObservedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between an ObservableProperty and the Sensor able to observe it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">is observed by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/isResultOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isResultOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:label xml:lang="en">is result of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -198,6 +164,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between an Observation and the Sensor which made the Observations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">made by sensor</rdfs:label>
     </owl:ObjectProperty>
@@ -209,6 +176,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeObservation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between a Sensor and an Observation made by the Sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">made observation</rdfs:label>
     </owl:ObjectProperty>
@@ -220,6 +188,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">observed property</rdfs:label>
     </owl:ObjectProperty>
@@ -231,54 +200,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">observes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/detects -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/detects">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/inverseOfdetects"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">detects</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/hasProperty -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/hasProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">has property</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/hasSubSystem -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/hasSubSystem">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/inverseOfhasSubSystem"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">has subsystem</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/implementedBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/implementedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">implemented by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -288,72 +212,20 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/implements">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between an entity that implements a Procedure in some executable way and the Procedure (an algorithm, procedure or method).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
         <rdfs:label xml:lang="en">implements</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/ns/ssn/inverseOfdetects -->
+    <!-- http://www.w3.org/ns/ssn/isFeatureOfInterest -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/inverseOfdetects">
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">inverse of detects</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/inverseOfhasSubSystem -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/inverseOfhasSubSystem">
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">inverse of has subsystem</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/inverseOfisProxyFor -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/inverseOfisProxyFor">
-        <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/isProxyFor"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">inverse of is proxy for</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/inverseOfwasOriginatedBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/inverseOfwasOriginatedBy">
-        <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/wasOriginatedBy"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">inverse of was originated by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/isPropertyOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/isPropertyOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">is property of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/isProxyFor -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/isProxyFor">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">is proxy for</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/isFeatureOfInterest">
+        <rdfs:comment xml:lang="en">A relation between a FeatureOfInterest and an Observation about it or an Actuation acting on it, or an act of Sampling that sampled it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is feature of interest</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -363,49 +235,163 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/wasOriginatedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Relation between an Observation and the Stimulus that originated it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
         <rdfs:label xml:lang="en">was originated by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weat#captures -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#locatedIn -->
 
 
-    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weat#captures">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:label xml:lang="en">captures</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weat#locatedIn">
+        <rdfs:comment xml:lang="en">Relation between Sensor and AdministrativeArea that locates it in a City and a Country.</rdfs:comment>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weat#isCapturedBy -->
+    <!-- https://saref.etsi.org/core/controlsProperty -->
 
 
-    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weat#isCapturedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label xml:lang="en">is captured by</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/controlsProperty">
+        <rdfs:comment xml:lang="en">A relationship specifying the property that can be controlled by a certain device</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">controls property</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weat#observedInInterval -->
+    <!-- https://saref.etsi.org/core/hasMeasurement -->
 
 
-    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weat#observedInInterval">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:label xml:lang="en">observed in interval</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasMeasurement">
+        <rdfs:comment xml:lang="en">A relationship between a feature of interest and a measurement about it</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">has measurement</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/saref#isMeasuredIn -->
+    <!-- https://saref.etsi.org/core/hasProperty -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/saref#isMeasuredIn">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">A relationship between a feature of interest and a property of that feature</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <rdfs:label xml:lang="en">has property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isControlledByDevice -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isControlledByDevice">
+        <rdfs:comment xml:lang="en">A relationship specifying the devices that can control a certain property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is controlled by device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isMeasuredByDevice -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredByDevice">
+        <rdfs:comment xml:lang="en">A relationship specifying the devices that can measure a certain property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is measured by device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isMeasuredIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredIn">
+        <rdfs:comment xml:lang="en">A relationship identifying the unit of measure used for a certain entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
         <rdfs:label xml:lang="en">is measured in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isMeasurementOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasurementOf">
+        <rdfs:comment xml:lang="en">A relationship between a measurement and the feature of interest whose quality was measured</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is measurement of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isPropertyOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isPropertyOf">
+        <rdfs:comment xml:lang="en">A relationship between a property and the feature of interest it belongs to</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is property of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/makeMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/makeMeasurement">
+        <rdfs:comment xml:lang="en">A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">make measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/measurementMadeBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measurementMadeBy">
+        <rdfs:comment xml:lang="en">A relation between a measurement and the device that made it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">measurement made by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/measuresProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measuresProperty">
+        <rdfs:comment xml:lang="en">A relationship specifying the property that can be measured by a certain device</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">measures property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/relatesToMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToMeasurement">
+        <rdfs:comment xml:lang="en">A relationship between a property and the measurements it relates to</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">relates to measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/relatesToProprety -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToProprety">
+        <rdfs:comment xml:lang="en">A relationship between a measurement and the property it relates to</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">relates to property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -422,14 +408,43 @@
     
 
 
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+        <rdfs:comment xml:lang="en">The WGS84 altitude of a SpatialThing (decimal meters 
+above the local reference ellipsoid).</rdfs:comment>
+        <rdfs:label xml:lang="en">altitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:comment xml:lang="en">The WGS84 latitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:label xml:lang="en">latitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:comment xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:label xml:lang="en">longitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.w3.org/ns/sosa/resultTime -->
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/resultTime">
         <rdfs:comment xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:isDefinedBy xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
@@ -450,44 +465,61 @@
 
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:comment>s4city: https://w3id.org/def/saref4city#
+        <rdfs:comment xml:lang="en">s4city: https://w3id.org/def/saref4city#
 time: https://w3.org/2006/time#
 owl: http://www.w3org/2002/07/owl#
 ssn: http://www.w3.org/ns/ssn/
 sosa: http://www.w3.org/ns/sosa/
 om: http://www.ontology-of-units-of-measure.org/resource/om-2/
-geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
+geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+saref: https://w3id.org/saref#</rdfs:comment>
     </rdf:Description>
     
 
 
-    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:label xml:lang="en">Feature of Interest</rdfs:label>
-        <skos:definition xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</skos:definition>
-        <skos:example xml:lang="en">When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.</skos:example>
+        <rdfs:comment xml:lang="en">A point, typically described using a coordinate system relative to Earth, such as WGS84.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+        <rdfs:label xml:lang="en">Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:comment xml:lang="en">Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+        <rdfs:label xml:lang="en">Spatial Thing</rdfs:label>
     </owl:Class>
     
 
@@ -496,13 +528,7 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/inverseOfobservedProperty"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isObservedBy"/>
@@ -512,7 +538,6 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
         <rdfs:comment xml:lang="en">An observable quality (property, characteristic) of a FeatureOfInterest.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Observable Property</rdfs:label>
-        <skos:definition xml:lang="en">An observable quality (property, characteristic) of a FeatureOfInterest.</skos:definition>
         <skos:example xml:lang="en">The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.</skos:example>
     </owl:Class>
     
@@ -525,13 +550,7 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -544,18 +563,6 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#isCapturedBy"/>
-                <owl:allValuesFrom rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherStation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -596,39 +603,7 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</rdfs:comment>
         <rdfs:label xml:lang="en">Observation</rdfs:label>
-        <skos:definition xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</skos:definition>
         <skos:example xml:lang="en">The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/Result -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Result">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/saref#isMeasuredIn"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isResultOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isResultOf"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The Result of an Observation, Actuation, or act of Sampling. To store an observation&apos;s simple result value one can use the hasSimpleResult property.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:label xml:lang="en">Result</rdfs:label>
-        <skos:definition xml:lang="en">The Result of an Observation, Actuation, or act of Sampling. To store an observation&apos;s simple result value one can use the hasSimpleResult property.</skos:definition>
-        <skos:example xml:lang="en">The value 20 as the height of a certain tree together with the unit, e.g., Meter.</skos:example>
     </owl:Class>
     
 
@@ -637,7 +612,7 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
@@ -659,50 +634,7 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
         <rdfs:comment xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
-        <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</skos:definition>
         <skos:example xml:lang="en">Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/Property -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/ssn/Property">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/isPropertyOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">Property</rdfs:label>
-        <skos:definition xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/System -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/ssn/System">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/inverseOfhasSubSystem"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:label xml:lang="en">System</rdfs:label>
-        <skos:definition xml:lang="en">System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems.</skos:definition>
     </owl:Class>
     
 
@@ -832,31 +764,9 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
 
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:comment xml:lang="en">Property type to classify  weather data.</rdfs:comment>
         <rdfs:label xml:lang="en">Weather Property</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weat#WeatherStation -->
-
-
-    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#WeatherStation">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#captures"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/def/saref4city#City"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate. The measurements taken include temperature, atmospheric pressure, humidity, wind speed, wind direction, and precipitation amounts.</rdfs:comment>
-        <rdfs:label xml:lang="en">Weather Station</rdfs:label>
     </owl:Class>
     
 
@@ -871,11 +781,166 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
     
 
 
+    <!-- https://saref.etsi.org/core/Device -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#locatedIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/saref4city#AdministrativeArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/FeatureOfInterest">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/isFeatureOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasMeasurement"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A feature of interest represents any real world entity from which a property is measured. It is linked to the different properties it has and to its measurements.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">Feature of Interest</rdfs:label>
+        <skos:example xml:lang="en">When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Measurement -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasurementOf"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/measurementMadeBy"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToProprety"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The measured value made over a property. It is also linked to the unit of measure in which the value is expressed and to the timestamp of the measurement.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Property -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isControlledByDevice"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredByDevice"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isPropertyOf"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToMeasurement"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Anything that can be sensed, measured or controlled in households, common public buildings or offices. A list of properties that are relevant for the purpose of SAREF is proposed, but this list can be extended.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <rdfs:label xml:lang="en">Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4city#AdministrativeArea -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4city#AdministrativeArea">
+        <rdfs:comment xml:lang="en">An administrative division, unit, entity, area or region, also referred to as a subnational entity, constituent unit, or country subdivision, is a portion of a country or other region delineated for the purpose of administration. (https://en.wikipedia.org/wiki/Administrative_division)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city#"/>
+        <rdfs:label xml:lang="en">Administrative Area</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/saref4city#City -->
 
 
     <owl:Class rdf:about="https://w3id.org/def/saref4city#City">
-        <rdfs:comment>A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4city#AdministrativeArea"/>
+        <rdfs:comment xml:lang="en">A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority. (https://en.wikipedia.org/wiki/City)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city#"/>
+        <rdfs:label xml:lang="en">City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4city#Country -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4city#Country">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4city#AdministrativeArea"/>
+        <rdfs:comment xml:lang="en">A country is a region that is identified as a distinct national entity in political geography. (https://en.wikipedia.org/wiki/Country)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city#"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
     </owl:Class>
     
 
@@ -884,7 +949,7 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/saref#UnitOfMeasure">
-        <rdfs:comment xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called &quot;watt&quot;. Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a saref:Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when it is said 10 Watt, it is actually meant 10 times the definite predetermined power called &quot;watt&quot;. The definition of unit of measure in SAREF refers to the definition of unit of measure in the Ontology of units of Measure (OM). A list of some units of measure that are relevant for the purpose of SAREF is proposed, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label xml:lang="en">Unit of Measure</rdfs:label>
     </owl:Class>
@@ -1495,15 +1560,6 @@ geo: http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:comment>
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#cloudCover">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#SkyCover"/>
         <rdfs:comment>An individual representing the sky cover property cloud cover from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weat#humidity -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#humidity">
-        <rdfs:comment>An individual representing the humidity property humidity from Dark Sky API.</rdfs:comment>
     </owl:NamedIndividual>
     
 
