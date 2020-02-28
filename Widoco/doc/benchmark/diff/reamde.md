@@ -1,1 +1,0 @@
-A few versions of ontologies to test the automated changelog

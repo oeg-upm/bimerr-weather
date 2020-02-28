@@ -9,12 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:weat="https://bimerr.iot.linkeddata.es/def/weat#"
-     xmlns:saref="https://saref.etsi.org/core/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:s4city="https://w3id.org/def/saref4city#"
-     xmlns:schema="http://schema.org/"
-     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://bimerr.iot.linkeddata.es/def/weat">
         <dc:decription xml:lang="en">Ontology for weather phenomena and exterior conditions.</dc:decription>
         <dc:title xml:lang="en">BIMERR Weather Ontology</dc:title>
@@ -37,10 +33,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/elements/1.1/decription -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/decription"/>
     
@@ -48,11 +46,13 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
     <!-- http://purl.org/dc/terms/abstract -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
@@ -60,11 +60,13 @@
 
     <!-- http://purl.org/dc/terms/contributor -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
@@ -72,11 +74,13 @@
 
     <!-- http://purl.org/dc/terms/license -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/publisher -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
@@ -84,11 +88,13 @@
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
@@ -96,11 +102,13 @@
 
     <!-- http://schema.org/domainIncludes -->
 
+
     <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
@@ -108,11 +116,13 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#note -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
     
@@ -126,10 +136,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
+
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -149,6 +161,7 @@
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#locatedIn -->
 
+
     <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weat#locatedIn">
         <rdfs:comment xml:lang="en">Relation between Sensor and AdministrativeArea that locates it in a City and a Country.</rdfs:comment>
         <rdfs:label xml:lang="en">located in</rdfs:label>
@@ -157,6 +170,7 @@
 
 
     <!-- https://saref.etsi.org/core/controlsProperty -->
+
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/controlsProperty">
         <rdfs:comment xml:lang="en">A relationship specifying the property that can be controlled by a certain device</rdfs:comment>
@@ -168,6 +182,7 @@
 
     <!-- https://saref.etsi.org/core/hasMeasurement -->
 
+
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasMeasurement">
         <rdfs:comment xml:lang="en">A relationship between a feature of interest and a measurement about it</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
@@ -177,6 +192,7 @@
 
 
     <!-- https://saref.etsi.org/core/hasProperty -->
+
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasProperty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -189,6 +205,7 @@
 
     <!-- https://saref.etsi.org/core/isControlledByDevice -->
 
+
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isControlledByDevice">
         <rdfs:comment xml:lang="en">A relationship specifying the devices that can control a certain property</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
@@ -198,6 +215,7 @@
 
 
     <!-- https://saref.etsi.org/core/isMeasuredByDevice -->
+
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredByDevice">
         <rdfs:comment xml:lang="en">A relationship specifying the devices that can measure a certain property</rdfs:comment>
@@ -209,6 +227,7 @@
 
     <!-- https://saref.etsi.org/core/isMeasuredIn -->
 
+
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredIn">
         <rdfs:comment xml:lang="en">A relationship identifying the unit of measure used for a certain entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
@@ -218,6 +237,7 @@
 
 
     <!-- https://saref.etsi.org/core/isMeasurementOf -->
+
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasurementOf">
         <rdfs:comment xml:lang="en">A relationship between a measurement and the feature of interest whose quality was measured</rdfs:comment>
@@ -229,6 +249,7 @@
 
     <!-- https://saref.etsi.org/core/isPropertyOf -->
 
+
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isPropertyOf">
         <rdfs:comment xml:lang="en">A relationship between a property and the feature of interest it belongs to</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
@@ -238,6 +259,7 @@
 
 
     <!-- https://saref.etsi.org/core/makeMeasurement -->
+
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/makeMeasurement">
         <rdfs:comment xml:lang="en">A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates.</rdfs:comment>
@@ -249,6 +271,7 @@
 
     <!-- https://saref.etsi.org/core/measurementMadeBy -->
 
+
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measurementMadeBy">
         <rdfs:comment xml:lang="en">A relation between a measurement and the device that made it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
@@ -258,6 +281,7 @@
 
 
     <!-- https://saref.etsi.org/core/measuresProperty -->
+
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measuresProperty">
         <rdfs:comment xml:lang="en">A relationship specifying the property that can be measured by a certain device</rdfs:comment>
@@ -269,6 +293,7 @@
 
     <!-- https://saref.etsi.org/core/relatesToMeasurement -->
 
+
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToMeasurement">
         <rdfs:comment xml:lang="en">A relationship between a property and the measurements it relates to</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
@@ -278,6 +303,7 @@
 
 
     <!-- https://saref.etsi.org/core/relatesToProprety -->
+
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToProprety">
         <rdfs:comment xml:lang="en">A relationship between a measurement and the property it relates to</rdfs:comment>
@@ -295,10 +321,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
         <rdfs:comment xml:lang="en">The WGS84 altitude of a SpatialThing (decimal meters 
@@ -310,6 +338,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
 
+
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
         <rdfs:comment xml:lang="en">The WGS84 latitude of a SpatialThing (decimal degrees).</rdfs:comment>
         <rdfs:label xml:lang="en">latitude</rdfs:label>
@@ -319,6 +348,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
 
+
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
         <rdfs:comment xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees).</rdfs:comment>
         <rdfs:label xml:lang="en">longitude</rdfs:label>
@@ -327,6 +357,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <!-- https://saref.etsi.org/core/hasTimeStamp -->
+
 
     <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core/hasTimeStamp">
         <rdfs:comment xml:lang="en">Time stamp of the measure. Identify when the measurement applies to the property, which can be used either for single measurements
@@ -344,10 +375,12 @@ or for series of measurements</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
 
     <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
@@ -384,6 +417,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
 
+
     <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
         <rdfs:comment xml:lang="en">Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
@@ -393,6 +427,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.w3.org/ns/sosa/Sensor -->
+
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
@@ -406,6 +441,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#AtmosphericPhenomenon -->
 
+
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#AtmosphericPhenomenon">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
         <rdfs:comment xml:lang="en">A natural phenomenon involving the physical properties of matter and energy.</rdfs:comment>
@@ -415,6 +451,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Humidity -->
+
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Humidity">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
@@ -426,6 +463,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Illuminance -->
 
+
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Illuminance">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
         <rdfs:comment>The total luminous flux incident on a surface, per unit area. It is a measure of how much the incident light illuminates the surface, wavelength-weighted by the luminosity function to correlate with human brightness perception.</rdfs:comment>
@@ -435,6 +473,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Precipitation -->
+
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Precipitation">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
@@ -446,6 +485,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Pressure -->
 
+
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Pressure">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
         <rdfs:comment xml:lang="en">The force exerted over a given area or object, either because of gravity pulling on it or other motion the object has.  Molecules in the air produce pressure through both their weight and movement, and this pressure is connected to other properties of the atmosphere.</rdfs:comment>
@@ -455,6 +495,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Radiation -->
+
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Radiation">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
@@ -466,6 +507,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#SkyCover -->
 
+
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#SkyCover">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
         <rdfs:comment xml:lang="en">The extent to which the sky is obscured by clouds.</rdfs:comment>
@@ -475,6 +517,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Snow -->
+
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Snow">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
@@ -486,6 +529,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Storm -->
 
+
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Storm">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
         <rdfs:comment xml:lang="en">Any disturbed state of a body especially affecting its surface, and strongly implying a wind force. It may be marked by significant disruptions and lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc.</rdfs:comment>
@@ -495,6 +539,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Temperature -->
+
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Temperature">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
@@ -506,6 +551,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Time -->
 
+
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Time">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
         <rdfs:comment>The indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future.</rdfs:comment>
@@ -515,6 +561,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty -->
+
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
@@ -526,6 +573,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Wind -->
 
+
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Wind">
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#AtmosphericPhenomenon"/>
         <rdfs:comment>The perceptible natural movement of the air, especially in the form of a current of air blowing from a particular direction.</rdfs:comment>
@@ -534,6 +582,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://saref.etsi.org/core/Device -->
+
 
     <owl:Class rdf:about="https://saref.etsi.org/core/Device">
         <rdfs:subClassOf>
@@ -556,6 +605,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://saref.etsi.org/core/FeatureOfInterest -->
+
 
     <owl:Class rdf:about="https://saref.etsi.org/core/FeatureOfInterest">
         <rdfs:subClassOf>
@@ -585,6 +635,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://saref.etsi.org/core/Measurement -->
+
 
     <owl:Class rdf:about="https://saref.etsi.org/core/Measurement">
         <rdfs:subClassOf>
@@ -626,6 +677,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://saref.etsi.org/core/Property -->
 
+
     <owl:Class rdf:about="https://saref.etsi.org/core/Property">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -660,6 +712,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://w3id.org/def/saref4city#AdministrativeArea -->
 
+
     <owl:Class rdf:about="https://w3id.org/def/saref4city#AdministrativeArea">
         <rdfs:comment xml:lang="en">An administrative division, unit, entity, area or region, also referred to as a subnational entity, constituent unit, or country subdivision, is a portion of a country or other region delineated for the purpose of administration. (https://en.wikipedia.org/wiki/Administrative_division)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city#"/>
@@ -669,6 +722,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://w3id.org/def/saref4city#City -->
+
 
     <owl:Class rdf:about="https://w3id.org/def/saref4city#City">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4city#AdministrativeArea"/>
@@ -681,6 +735,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://w3id.org/def/saref4city#Country -->
 
+
     <owl:Class rdf:about="https://w3id.org/def/saref4city#Country">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4city#AdministrativeArea"/>
         <rdfs:comment xml:lang="en">A country is a region that is identified as a distinct national entity in political geography. (https://en.wikipedia.org/wiki/Country)</rdfs:comment>
@@ -691,6 +746,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://w3id.org/saref#UnitOfMeasure -->
+
 
     <owl:Class rdf:about="https://w3id.org/saref#UnitOfMeasure">
         <rdfs:comment xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a saref:Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when it is said 10 Watt, it is actually meant 10 times the definite predetermined power called &quot;watt&quot;. The definition of unit of measure in SAREF refers to the definition of unit of measure in the Ontology of units of Measure (OM). A list of some units of measure that are relevant for the purpose of SAREF is proposed, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).</rdfs:comment>
@@ -708,10 +764,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Density -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Density">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -721,6 +779,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -728,6 +787,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -737,6 +797,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/day -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/day">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -744,6 +805,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degree -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degree">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -753,6 +815,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -760,6 +823,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -769,6 +833,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hour -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hour">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -776,6 +841,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -785,6 +851,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -792,6 +859,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/lux -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lux">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -801,6 +869,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/metre -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -808,6 +877,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerSecond-Time -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerSecond-Time">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -817,6 +887,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/mile-Statute -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mile-Statute">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -824,6 +895,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/mile-StatutePerHour -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mile-StatutePerHour">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -833,6 +905,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/millibar -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millibar">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -840,6 +913,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre -->
+
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
@@ -849,6 +923,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/pascal -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pascal">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -857,6 +932,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/percent -->
 
+
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/percent">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -864,6 +940,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#AerosolOpticalDepth -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#AerosolOpticalDepth">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
@@ -874,6 +951,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Albedo -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Albedo">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
         <rdfs:comment>An individual representing the radiation property albedo from EPW.</rdfs:comment>
@@ -882,6 +960,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#AtmosphericStationPressure -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#AtmosphericStationPressure">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Pressure"/>
@@ -892,6 +971,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#CeillingHeight -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#CeillingHeight">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
         <rdfs:comment>An individual representing the weather property ceilling height.</rdfs:comment>
@@ -900,6 +980,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#DataSourceAndUncertaintyFlags -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#DataSourceAndUncertaintyFlags">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
@@ -910,6 +991,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#DaysSinceLastSnowfall -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#DaysSinceLastSnowfall">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Snow"/>
         <rdfs:comment>An individual representing the snow property days since last snowfall time from EPW.</rdfs:comment>
@@ -918,6 +1000,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#DewPointTemperature -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#DewPointTemperature">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
@@ -928,6 +1011,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#DiffuseHorizontalRadiation -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#DiffuseHorizontalRadiation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
         <rdfs:comment>An individual representing the radiation property diffuse horizontal radiation from EPW.</rdfs:comment>
@@ -936,6 +1020,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#DirectHorizontalIlluminance -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#DirectHorizontalIlluminance">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Illuminance"/>
@@ -946,6 +1031,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#DirectNormalIlluminance -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#DirectNormalIlluminance">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Illuminance"/>
         <rdfs:comment>An individual representing the illuminance property direct normal illuminance from EPW.</rdfs:comment>
@@ -954,6 +1040,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#DirectNormalRadiation -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#DirectNormalRadiation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
@@ -964,6 +1051,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#DryBulbTemperature -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#DryBulbTemperature">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property dry bulb temperature from EPW.</rdfs:comment>
@@ -972,6 +1060,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#ExtraterrestialDirectNormalRadiation -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#ExtraterrestialDirectNormalRadiation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
@@ -982,6 +1071,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#ExtraterrestialHorizontalRadiation -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#ExtraterrestialHorizontalRadiation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
         <rdfs:comment>An individual representing the radiation property extrzaterrestial horizontal radiation from EPW.</rdfs:comment>
@@ -990,6 +1080,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#GlobalHorizontalIlluminance -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#GlobalHorizontalIlluminance">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Illuminance"/>
@@ -1000,6 +1091,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#GlobalHorizontalRadiation -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#GlobalHorizontalRadiation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
         <rdfs:comment>An individual representing the radiation property global horizontal radiation from EPW.</rdfs:comment>
@@ -1008,6 +1100,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#HorizontalInfraredRadiationIntensity -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#HorizontalInfraredRadiationIntensity">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
@@ -1018,6 +1111,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#InchesPerHour -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#InchesPerHour">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -1025,6 +1119,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#LiquidPrecipitationDepth -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#LiquidPrecipitationDepth">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
@@ -1035,6 +1130,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#LiquidPrecipitationQuantity -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#LiquidPrecipitationQuantity">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
         <rdfs:comment>An individual representing the precipitation property liquid precipitation quantity from EPW.</rdfs:comment>
@@ -1043,6 +1139,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#OpaqueSkycover -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#OpaqueSkycover">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#SkyCover"/>
@@ -1053,6 +1150,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#PrecipitableWater -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#PrecipitableWater">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
         <rdfs:comment>An individual representing the precipitation property precipitable water from EPW.</rdfs:comment>
@@ -1061,6 +1159,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#PresentWeatherCodes -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#PresentWeatherCodes">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
@@ -1071,6 +1170,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#PresentWeatherObservation -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#PresentWeatherObservation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
     </owl:NamedIndividual>
@@ -1078,6 +1178,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#RelativeHumidity -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#RelativeHumidity">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Humidity"/>
@@ -1088,6 +1189,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#SnowDepth -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#SnowDepth">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Snow"/>
         <rdfs:comment>An individual representing the snow property snow depth from EPW.</rdfs:comment>
@@ -1097,6 +1199,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#TenthsOfCoverage -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#TenthsOfCoverage">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -1105,6 +1208,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Thousandths -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Thousandths">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -1112,6 +1216,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#TotalSkyCover -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#TotalSkyCover">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#SkyCover"/>
@@ -1122,6 +1227,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Visibility -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Visibility">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
         <rdfs:comment>An individual representing the weather property visibility from EPW.</rdfs:comment>
@@ -1131,6 +1237,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#WattHourPerSquareMetre -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#WattHourPerSquareMetre">
         <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
     </owl:NamedIndividual>
@@ -1138,6 +1245,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#WindDirection -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#WindDirection">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Wind"/>
@@ -1148,6 +1256,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#ZenithLuminance -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#ZenithLuminance">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Illuminance"/>
         <rdfs:comment>An individual representing the illuminance property zenith luminance from EPW.</rdfs:comment>
@@ -1156,6 +1265,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperature -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperature">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
@@ -1166,6 +1276,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureHigh -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureHigh">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property apparent temperature high from Dark Sky API.</rdfs:comment>
@@ -1174,6 +1285,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureHighTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureHighTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1184,6 +1296,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureLow -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureLow">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property apparent temperature low from Dark Sky API.</rdfs:comment>
@@ -1192,6 +1305,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureLowTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureLowTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1202,6 +1316,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMax -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMax">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property apparent temperature max from Dark Sky API.</rdfs:comment>
@@ -1210,6 +1325,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMaxTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMaxTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1220,6 +1336,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMin -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMin">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property apparent temperature min from Dark Sky API.</rdfs:comment>
@@ -1228,6 +1345,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMinTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMinTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1238,6 +1356,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#cloudCover -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#cloudCover">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#SkyCover"/>
         <rdfs:comment>An individual representing the sky cover property cloud cover from Dark Sky API.</rdfs:comment>
@@ -1246,6 +1365,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#moonPhase -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#moonPhase">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
@@ -1256,6 +1376,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#nearestStormBearing -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#nearestStormBearing">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Storm"/>
         <rdfs:comment>An individual representing the storm property nearest storm bearing from Dark Sky API.</rdfs:comment>
@@ -1264,6 +1385,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#nearestStormDistance -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#nearestStormDistance">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Storm"/>
@@ -1274,6 +1396,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#ozone -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#ozone">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
         <rdfs:comment>An individual representing the weather property ozone from Dark Sky API.</rdfs:comment>
@@ -1282,6 +1405,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#precipAccumulation -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#precipAccumulation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
@@ -1292,6 +1416,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#precipIntensity -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#precipIntensity">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
         <rdfs:comment>An individual representing the precipitation property precipitation intensity from Dark Sky API.</rdfs:comment>
@@ -1300,6 +1425,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#precipIntensityError -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#precipIntensityError">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
@@ -1310,6 +1436,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#precipIntensityMax -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#precipIntensityMax">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
         <rdfs:comment>An individual representing the precipitation property precipitation intensity max from Dark Sky API.</rdfs:comment>
@@ -1318,6 +1445,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#precipIntensityMaxTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#precipIntensityMaxTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1328,6 +1456,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#precipProbability -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#precipProbability">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
         <rdfs:comment>An individual representing the precipitation property precipitation probability from Dark Sky API.</rdfs:comment>
@@ -1336,6 +1465,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#precipType -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#precipType">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
@@ -1346,6 +1476,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#pressure -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#pressure">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Pressure"/>
     </owl:NamedIndividual>
@@ -1353,6 +1484,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#sunriseTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#sunriseTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1363,6 +1495,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#sunsetTime -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#sunsetTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
         <rdfs:comment>An individual representing the time property sunset time from Dark Sky API.</rdfs:comment>
@@ -1371,6 +1504,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperature -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperature">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
@@ -1381,6 +1515,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperatureHigh -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperatureHigh">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property temperature high from Dark Sky API.</rdfs:comment>
@@ -1389,6 +1524,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperatureHighTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperatureHighTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1399,6 +1535,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperatureLow -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperatureLow">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property temperature low from Dark Sky API.</rdfs:comment>
@@ -1407,6 +1544,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperatureLowTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperatureLowTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1417,6 +1555,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperatureMax -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperatureMax">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property temperature max from Dark Sky API.</rdfs:comment>
@@ -1425,6 +1564,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperatureMaxTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperatureMaxTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1435,6 +1575,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperatureMin -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperatureMin">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
         <rdfs:comment>An individual representing the temperature property temperature min from Dark Sky API.</rdfs:comment>
@@ -1443,6 +1584,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#temperatureMinTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#temperatureMinTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1453,6 +1595,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#time -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#time">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
         <rdfs:comment>An individual representing the time property  time from Dark Sky API.</rdfs:comment>
@@ -1461,6 +1604,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#uvIndex -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#uvIndex">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Radiation"/>
@@ -1471,6 +1615,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#uvIndexTime -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#uvIndexTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
         <rdfs:comment>An individual representing the time property uv index time from Dark Sky API.</rdfs:comment>
@@ -1479,6 +1624,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#windBearing -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#windBearing">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Wind"/>
@@ -1489,6 +1635,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#windGust -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#windGust">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Wind"/>
         <rdfs:comment>An individual representing the wind property wind gust from Dark Sky API.</rdfs:comment>
@@ -1497,6 +1644,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#windGustTime -->
+
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#windGustTime">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
@@ -1507,6 +1655,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- https://bimerr.iot.linkeddata.es/def/weat#windSpeed -->
 
+
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#windSpeed">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Wind"/>
         <rdfs:comment>An individual representing the wind property wind speed from EPW.</rdfs:comment>
@@ -1515,5 +1664,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
 
