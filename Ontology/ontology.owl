@@ -414,6 +414,16 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#Ground -->
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Ground">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"/>
+        <rdfs:comment xml:lang="en">Ground properties where the measures are made.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ground</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weat#Humidity -->
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Humidity">
@@ -783,6 +793,22 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre -->
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre">
@@ -863,6 +889,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weat#AerosolOpticalDepth -->
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#AerosolOpticalDepth">
@@ -886,6 +920,15 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#AtmosphericStationPressure">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Pressure"/>
         <rdfs:comment>An individual representing the pressure property atmospheric station pressure.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#AverageTemperatureForPeriod -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#AverageTemperatureForPeriod">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the average temperature for period from EPW.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1007,6 +1050,51 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#GroundConductivity -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#GroundConductivity">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground conductivity from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#GroundDensity -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#GroundDensity">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground density from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#GroundSpecificHeat -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#GroundSpecificHeat">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground specific heat from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#GroundTemperature -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#GroundTemperature">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground temperature from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#GroundTemperatureDepth -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#GroundTemperatureDepth">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground temperature depth from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weat#HorizontalInfraredRadiationIntensity -->
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#HorizontalInfraredRadiationIntensity">
@@ -1038,6 +1126,24 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#LiquidPrecipitationQuantity">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Precipitation"/>
         <rdfs:comment>An individual representing the precipitation property liquid precipitation quantity from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#MaxTemperatureForPeriod -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#MaxTemperatureForPeriod">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the max temperature for period from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#MinTemperatureForPeriod -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#MinTemperatureForPeriod">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the min temperature for period from EPW.</rdfs:comment>
     </owl:NamedIndividual>
     
 
