@@ -273,6 +273,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                        rdfs:label "Atmospheric Phenomenon"@en .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weat#Ground
+:Ground rdf:type owl:Class ;
+        rdfs:subClassOf :WeatherProperty ;
+        rdfs:comment "Ground properties where the measures are made."@en ;
+        rdfs:label "Ground"@en .
+
+
 ###  https://bimerr.iot.linkeddata.es/def/weat#Humidity
 :Humidity rdf:type owl:Class ;
           rdfs:subClassOf :WeatherProperty ;
@@ -520,6 +527,16 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                                                         <https://w3id.org/saref#UnitOfMeasure> .
 
 
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram
+<http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram> rdf:type owl:NamedIndividual ,
+                                                                                      <https://w3id.org/saref#UnitOfMeasure> .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre
+<http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre> rdf:type owl:NamedIndividual ,
+                                                                                           <https://w3id.org/saref#UnitOfMeasure> .
+
+
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre> rdf:type owl:NamedIndividual ,
                                                                                <https://w3id.org/saref#UnitOfMeasure> .
@@ -570,6 +587,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                                              <https://w3id.org/saref#UnitOfMeasure> .
 
 
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin
+<http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin> rdf:type owl:NamedIndividual ,
+                                                                                        <https://w3id.org/saref#UnitOfMeasure> .
+
+
 ###  https://bimerr.iot.linkeddata.es/def/weat#AerosolOpticalDepth
 :AerosolOpticalDepth rdf:type owl:NamedIndividual ,
                               :Radiation ;
@@ -586,6 +608,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 :AtmosphericStationPressure rdf:type owl:NamedIndividual ,
                                      :Pressure ;
                             rdfs:comment "An individual representing the pressure property atmospheric station pressure." .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weat#AverageTemperatureForPeriod
+:AverageTemperatureForPeriod rdf:type owl:NamedIndividual ,
+                                      :Temperature ;
+                             rdfs:comment "An individual representing the average temperature for period from EPW."@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weat#CeillingHeight
@@ -666,6 +694,36 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                            rdfs:comment "An individual representing the radiation property global horizontal radiation from EPW." .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weat#GroundConductivity
+:GroundConductivity rdf:type owl:NamedIndividual ,
+                             :Ground ;
+                    rdfs:comment "An individual representing the ground conductivity from EPW."@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weat#GroundDensity
+:GroundDensity rdf:type owl:NamedIndividual ,
+                        :Ground ;
+               rdfs:comment "An individual representing the ground density from EPW."@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weat#GroundSpecificHeat
+:GroundSpecificHeat rdf:type owl:NamedIndividual ,
+                             :Ground ;
+                    rdfs:comment "An individual representing the ground specific heat from EPW."@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weat#GroundTemperature
+:GroundTemperature rdf:type owl:NamedIndividual ,
+                            :Ground ;
+                   rdfs:comment "An individual representing the ground temperature from EPW."@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weat#GroundTemperatureDepth
+:GroundTemperatureDepth rdf:type owl:NamedIndividual ,
+                                 :Ground ;
+                        rdfs:comment "An individual representing the ground temperature depth from EPW."@en .
+
+
 ###  https://bimerr.iot.linkeddata.es/def/weat#HorizontalInfraredRadiationIntensity
 :HorizontalInfraredRadiationIntensity rdf:type owl:NamedIndividual ,
                                                :Radiation ;
@@ -687,6 +745,18 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 :LiquidPrecipitationQuantity rdf:type owl:NamedIndividual ,
                                       :Precipitation ;
                              rdfs:comment "An individual representing the precipitation property liquid precipitation quantity from EPW." .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weat#MaxTemperatureForPeriod
+:MaxTemperatureForPeriod rdf:type owl:NamedIndividual ,
+                                  :Temperature ;
+                         rdfs:comment "An individual representing the max temperature for period from EPW."@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weat#MinTemperatureForPeriod
+:MinTemperatureForPeriod rdf:type owl:NamedIndividual ,
+                                  :Temperature ;
+                         rdfs:comment "An individual representing the min temperature for period from EPW."@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weat#OpaqueSkycover

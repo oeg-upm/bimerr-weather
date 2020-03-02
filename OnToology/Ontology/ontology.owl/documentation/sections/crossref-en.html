@@ -24,6 +24,9 @@ This section provides details for each class and property defined by BIMERR Weat
          <a href="#https://saref.etsi.org/core/FeatureOfInterest" title="https://saref.etsi.org/core/FeatureOfInterest">Feature of Interest</a>
       </li>
       <li>
+         <a href="#Ground" title="https://bimerr.iot.linkeddata.es/def/weat#Ground">Ground</a>
+      </li>
+      <li>
          <a href="#Humidity"
             title="https://bimerr.iot.linkeddata.es/def/weat#Humidity">Humidity</a>
       </li>
@@ -239,6 +242,39 @@ This section provides details for each class and property defined by BIMERR Weat
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
+      </dl>
+   </div>
+   <div class="entity" id="Ground">
+      <h3>Ground<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#Ground</p>
+      <div class="comment">
+         <span class="markdown">Ground properties where the measures are made.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#WeatherProperty"
+               title="https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty">Weather Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#GroundConductivity"
+               title="https://bimerr.iot.linkeddata.es/def/weat#GroundConductivity">ground conductivity</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#GroundDensity"
+               title="https://bimerr.iot.linkeddata.es/def/weat#GroundDensity">ground density</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#GroundSpecificHeat"
+               title="https://bimerr.iot.linkeddata.es/def/weat#GroundSpecificHeat">ground specific heat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#GroundTemperature"
+               title="https://bimerr.iot.linkeddata.es/def/weat#GroundTemperature">ground temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#GroundTemperatureDepth"
+               title="https://bimerr.iot.linkeddata.es/def/weat#GroundTemperatureDepth">ground temperature depth</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Humidity">
@@ -656,10 +692,16 @@ This section provides details for each class and property defined by BIMERR Weat
                title="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMax">apparent temperature max</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#apparentTemperatureMin"
                title="https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMin">apparent temperature min</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AverageTemperatureForPeriod"
+               title="https://bimerr.iot.linkeddata.es/def/weat#AverageTemperatureForPeriod">average temperature for period</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DewPointTemperature"
                title="https://bimerr.iot.linkeddata.es/def/weat#DewPointTemperature">dew point temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DryBulbTemperature"
                title="https://bimerr.iot.linkeddata.es/def/weat#DryBulbTemperature">dry bulb temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MaxTemperatureForPeriod"
+               title="https://bimerr.iot.linkeddata.es/def/weat#MaxTemperatureForPeriod">max temperature for period</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MinTemperatureForPeriod"
+               title="https://bimerr.iot.linkeddata.es/def/weat#MinTemperatureForPeriod">min temperature for period</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperature"
                title="https://bimerr.iot.linkeddata.es/def/weat#temperature">temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperatureHigh"
@@ -763,6 +805,10 @@ This section provides details for each class and property defined by BIMERR Weat
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International">inch international</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#InchesPerHour"
                title="https://bimerr.iot.linkeddata.es/def/weat#InchesPerHour">inches per hour</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram"
+               title="http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram">joule per kilogram</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre"
+               title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre">kilogram per cubicmetre</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre">kilometre</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/lux"
@@ -789,6 +835,8 @@ This section provides details for each class and property defined by BIMERR Weat
                title="https://bimerr.iot.linkeddata.es/def/weat#Thousandths">thousandths</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#WattHourPerSquareMetre"
                title="https://bimerr.iot.linkeddata.es/def/weat#WattHourPerSquareMetre">watt hour per square metre</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin"
+               title="http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin">watt per metre kelvin</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -813,6 +861,7 @@ This section provides details for each class and property defined by BIMERR Weat
          <dd>
             <a href="#AtmosphericPhenomenon"
                title="https://bimerr.iot.linkeddata.es/def/weat#AtmosphericPhenomenon">Atmospheric Phenomenon</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Ground" title="https://bimerr.iot.linkeddata.es/def/weat#Ground">Ground</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Humidity"
                title="https://bimerr.iot.linkeddata.es/def/weat#Humidity">Humidity</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Illuminance"
@@ -1345,6 +1394,12 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
+         <a href="#AverageTemperatureForPeriod"
+            title="https://bimerr.iot.linkeddata.es/def/weat#AverageTemperatureForPeriod">
+            <span>average temperature for period</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre"
             title="http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre">
             <span>candela per square metre</span>
@@ -1471,6 +1526,36 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
+         <a href="#GroundConductivity"
+            title="https://bimerr.iot.linkeddata.es/def/weat#GroundConductivity">
+            <span>ground conductivity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#GroundDensity"
+            title="https://bimerr.iot.linkeddata.es/def/weat#GroundDensity">
+            <span>ground density</span>
+         </a>
+      </li>
+      <li>
+         <a href="#GroundSpecificHeat"
+            title="https://bimerr.iot.linkeddata.es/def/weat#GroundSpecificHeat">
+            <span>ground specific heat</span>
+         </a>
+      </li>
+      <li>
+         <a href="#GroundTemperature"
+            title="https://bimerr.iot.linkeddata.es/def/weat#GroundTemperature">
+            <span>ground temperature</span>
+         </a>
+      </li>
+      <li>
+         <a href="#GroundTemperatureDepth"
+            title="https://bimerr.iot.linkeddata.es/def/weat#GroundTemperatureDepth">
+            <span>ground temperature depth</span>
+         </a>
+      </li>
+      <li>
          <a href="#HorizontalInfraredRadiationIntensity"
             title="https://bimerr.iot.linkeddata.es/def/weat#HorizontalInfraredRadiationIntensity">
             <span>horizontal infrared radiation intensity</span>
@@ -1495,6 +1580,18 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
+         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram"
+            title="http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram">
+            <span>joule per kilogram</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre"
+            title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre">
+            <span>kilogram per cubicmetre</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre"
             title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre">
             <span>kilometre</span>
@@ -1516,6 +1613,12 @@ or for series of measurements</span>
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/lux"
             title="http://www.ontology-of-units-of-measure.org/resource/om-2/lux">
             <span>lux</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MaxTemperatureForPeriod"
+            title="https://bimerr.iot.linkeddata.es/def/weat#MaxTemperatureForPeriod">
+            <span>max temperature for period</span>
          </a>
       </li>
       <li>
@@ -1552,6 +1655,12 @@ or for series of measurements</span>
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre"
             title="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
             <span>millimetre</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MinTemperatureForPeriod"
+            title="https://bimerr.iot.linkeddata.es/def/weat#MinTemperatureForPeriod">
+            <span>min temperature for period</span>
          </a>
       </li>
       <li>
@@ -1784,6 +1893,12 @@ or for series of measurements</span>
          <a href="#WattHourPerSquareMetre"
             title="https://bimerr.iot.linkeddata.es/def/weat#WattHourPerSquareMetre">
             <span>watt hour per square metre</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin"
+            title="http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin">
+            <span>watt per metre kelvin</span>
          </a>
       </li>
       <li>
@@ -2043,6 +2158,25 @@ or for series of measurements</span>
          <dd>
             <a href="#Pressure"
                title="https://bimerr.iot.linkeddata.es/def/weat#Pressure">Pressure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AverageTemperatureForPeriod">
+      <h3>average temperature for period<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#AverageTemperatureForPeriod</p>
+      <div class="comment">
+         <span class="markdown">An individual representing the average temperature for period from EPW.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Temperature"
+               title="https://bimerr.iot.linkeddata.es/def/weat#Temperature">Temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2417,6 +2551,96 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
+   <div class="entity" id="GroundConductivity">
+      <h3>ground conductivity<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#GroundConductivity</p>
+      <div class="comment">
+         <span class="markdown">An individual representing the ground conductivity from EPW.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Ground" title="https://bimerr.iot.linkeddata.es/def/weat#Ground">Ground</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GroundDensity">
+      <h3>ground density<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#GroundDensity</p>
+      <div class="comment">
+         <span class="markdown">An individual representing the ground density from EPW.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Ground" title="https://bimerr.iot.linkeddata.es/def/weat#Ground">Ground</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GroundSpecificHeat">
+      <h3>ground specific heat<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#GroundSpecificHeat</p>
+      <div class="comment">
+         <span class="markdown">An individual representing the ground specific heat from EPW.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Ground" title="https://bimerr.iot.linkeddata.es/def/weat#Ground">Ground</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GroundTemperature">
+      <h3>ground temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#GroundTemperature</p>
+      <div class="comment">
+         <span class="markdown">An individual representing the ground temperature from EPW.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Ground" title="https://bimerr.iot.linkeddata.es/def/weat#Ground">Ground</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GroundTemperatureDepth">
+      <h3>ground temperature depth<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#GroundTemperatureDepth</p>
+      <div class="comment">
+         <span class="markdown">An individual representing the ground temperature depth from EPW.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Ground" title="https://bimerr.iot.linkeddata.es/def/weat#Ground">Ground</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="HorizontalInfraredRadiationIntensity">
       <h3>horizontal infrared radiation intensity<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2473,6 +2697,36 @@ or for series of measurements</span>
       </h3>
       <p>
          <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#InchesPerHour</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram">
+      <h3>joule per kilogram<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre">
+      <h3>kilogram per cubicmetre<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2545,6 +2799,25 @@ or for series of measurements</span>
          <dt>belongs to</dt>
          <dd>
             <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MaxTemperatureForPeriod">
+      <h3>max temperature for period<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#MaxTemperatureForPeriod</p>
+      <div class="comment">
+         <span class="markdown">An individual representing the max temperature for period from EPW.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Temperature"
+               title="https://bimerr.iot.linkeddata.es/def/weat#Temperature">Temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2635,6 +2908,25 @@ or for series of measurements</span>
          <dt>belongs to</dt>
          <dd>
             <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MinTemperatureForPeriod">
+      <h3>min temperature for period<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#MinTemperatureForPeriod</p>
+      <div class="comment">
+         <span class="markdown">An individual representing the min temperature for period from EPW.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Temperature"
+               title="https://bimerr.iot.linkeddata.es/def/weat#Temperature">Temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3334,6 +3626,21 @@ or for series of measurements</span>
       </h3>
       <p>
          <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weat#WattHourPerSquareMetre</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin">
+      <h3>watt per metre kelvin<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>

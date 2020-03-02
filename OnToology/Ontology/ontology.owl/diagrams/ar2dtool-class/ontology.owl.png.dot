@@ -8,8 +8,8 @@ node [shape = rectangle, color="orange"]; "saref:Device" "saref:FeatureOfInteres
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "saref:Property" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "saref:Device" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "saref:isPropertyOf" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:decimal" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "saref:isPropertyOf" [ label = "owl:onProperty" ];
 	"NULL" -> "saref:relatesToMeasurement" [ label = "owl:onProperty" ];
 	"NULL" -> "saref:isMeasuredIn" [ label = "owl:onProperty" ];
 	"NULL" -> "wgs84_pos:lat" [ label = "owl:onProperty" ];

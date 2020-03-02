@@ -28,6 +28,9 @@
     "decription" : {
       "@id" : "http://purl.org/dc/elements/1.1/decription"
     },
+    "Ground" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Ground"
+    },
     "FeatureOfInterest" : {
       "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
     },

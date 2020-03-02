@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="17" parse.nodes="21" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="18" parse.nodes="22" parse.order="free">
       <node id="nid_weat:WeatherProperty">
          <data key="d0">
             <y:ShapeNode>
@@ -330,6 +330,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_weat:Ground">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">weat:Ground</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf12" source="nid_weat:Ground" target="nid_weat:WeatherProperty">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_http://www.w3.org/ns/sosa/Sensor">
          <data key="d0">
             <y:ShapeNode>
@@ -354,7 +377,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf12" source="nid_http://www.w3.org/ns/sosa/Sensor" target="nid_saref:Device">
+    <edge id="eid_rdfs:subClassOf13" source="nid_http://www.w3.org/ns/sosa/Sensor" target="nid_saref:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -365,7 +388,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf13" source="nid_weat:AtmosphericPhenomenon" target="nid_weat:WeatherProperty">
+    <edge id="eid_rdfs:subClassOf14" source="nid_weat:AtmosphericPhenomenon" target="nid_weat:WeatherProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -388,7 +411,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_weat:Storm" target="nid_weat:Precipitation">
+    <edge id="eid_rdfs:subClassOf15" source="nid_weat:Storm" target="nid_weat:Precipitation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -411,7 +434,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_weat:Humidity" target="nid_weat:WeatherProperty">
+    <edge id="eid_rdfs:subClassOf16" source="nid_weat:Humidity" target="nid_weat:WeatherProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -434,7 +457,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_s4city:Country" target="nid_s4city:AdministrativeArea">
+    <edge id="eid_rdfs:subClassOf17" source="nid_s4city:Country" target="nid_s4city:AdministrativeArea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
