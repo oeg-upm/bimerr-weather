@@ -4,8 +4,8 @@ size="1501"
 node [shape = rectangle, color="orange"]; "saref:Device" "saref:FeatureOfInterest" "wgs84_pos:SpatialThing" "s4city:AdministrativeArea" "saref:Measurement" "saref:Property" ":UnitOfMeasure" ; /*classes style*/
 	"NULL" -> "saref:hasMeasurement" [ label = "owl:onProperty" ];
 	"NULL" -> "wgs84_pos:location" [ label = "owl:onProperty" ];
-	"NULL" -> "saref:isControlledByDevice" [ label = "owl:onProperty" ];
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "saref:isControlledByDevice" [ label = "owl:onProperty" ];
 	"NULL" -> "saref:Property" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "saref:Device" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "saref:isPropertyOf" [ label = "owl:onProperty" ];
