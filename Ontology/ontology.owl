@@ -1157,6 +1157,15 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weat#Period -->
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#Period">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weat#Time"/>
+        <rdfs:comment xml:lang="en">An individual representing the preiod for the max, min and average temperature periods from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weat#PrecipitableWater -->
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weat#PrecipitableWater">
