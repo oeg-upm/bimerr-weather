@@ -1,3 +1,4 @@
+@prefix : <https://bimerr.iot.linkeddata.es/def/weat#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -18,8 +19,9 @@
                                                 dc:decription "Ontology for weather phenomena and exterior conditions."@en ;
                                                 dc:title "BIMERR Weather Ontology"@en ;
                                                 terms:abstract "Ontology for weather phenomena and exterior conditions."@en ;
-                                                terms:contributor "Serge Chavez Feria https://github.com/Serge3006" ;
-                                                terms:creator "Salvador González Gerpe https://www.linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe" ;
+                                                terms:contributor "María Poveda-Villalón http://w3id.org/people/mpoveda" ,
+                                                                  "Serge Chavez-Feria https://github.com/Serge3006" ;
+                                                terms:creator "Salvador González-Gerpe https://www.linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe" ;
                                                 terms:license <http://creativecommons.org/licenses/by/4.0/> ;
                                                 terms:publisher <http://www.oeg-upm.net/> ;
                                                 vann:preferredNamespacePrefix "weat" ;
