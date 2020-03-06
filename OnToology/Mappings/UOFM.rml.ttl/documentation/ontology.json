@@ -1,0 +1,1909 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://mapping.example.com/map_AtmosphericPhenomenon1_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AtmosphericPhenomenon1"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_40"
+  }, {
+    "@id" : "http://mapping.example.com/pom_41"
+  }, {
+    "@id" : "http://mapping.example.com/pom_42"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_10"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_CeilingHeight_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CeilingHeight"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_43"
+  }, {
+    "@id" : "http://mapping.example.com/pom_44"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_11"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_DataSourcesAndUncertaintyFlags_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DataSourcesAndUncertaintyFlags"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_7"
+  }, {
+    "@id" : "http://mapping.example.com/pom_8"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_1"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_Humidity1_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Humidity1"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_21"
+  }, {
+    "@id" : "http://mapping.example.com/pom_22"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_4"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_Illuminance_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Illuminance"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_23"
+  }, {
+    "@id" : "http://mapping.example.com/pom_24"
+  }, {
+    "@id" : "http://mapping.example.com/pom_25"
+  }, {
+    "@id" : "http://mapping.example.com/pom_26"
+  }, {
+    "@id" : "http://mapping.example.com/pom_27"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_5"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_Precipitation1_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Precipitation1"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_30"
+  }, {
+    "@id" : "http://mapping.example.com/pom_31"
+  }, {
+    "@id" : "http://mapping.example.com/pom_32"
+  }, {
+    "@id" : "http://mapping.example.com/pom_33"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_7"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_PresentWeatherCodes_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PresentWeatherCodes"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_45"
+  }, {
+    "@id" : "http://mapping.example.com/pom_46"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_12"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_PresentWeatherObservation_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PresentWeatherObservation"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_47"
+  }, {
+    "@id" : "http://mapping.example.com/pom_48"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_13"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_Pressure1_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pressure1"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_28"
+  }, {
+    "@id" : "http://mapping.example.com/pom_29"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_6"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_Radiation1_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Radiation1"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_12"
+  }, {
+    "@id" : "http://mapping.example.com/pom_13"
+  }, {
+    "@id" : "http://mapping.example.com/pom_14"
+  }, {
+    "@id" : "http://mapping.example.com/pom_15"
+  }, {
+    "@id" : "http://mapping.example.com/pom_16"
+  }, {
+    "@id" : "http://mapping.example.com/pom_17"
+  }, {
+    "@id" : "http://mapping.example.com/pom_18"
+  }, {
+    "@id" : "http://mapping.example.com/pom_19"
+  }, {
+    "@id" : "http://mapping.example.com/pom_20"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_3"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_SkyCover1_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SkyCover1"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_37"
+  }, {
+    "@id" : "http://mapping.example.com/pom_38"
+  }, {
+    "@id" : "http://mapping.example.com/pom_39"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_9"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_Snow_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Snow"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_34"
+  }, {
+    "@id" : "http://mapping.example.com/pom_35"
+  }, {
+    "@id" : "http://mapping.example.com/pom_36"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_8"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_Temperature1_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Temperature1"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_10"
+  }, {
+    "@id" : "http://mapping.example.com/pom_11"
+  }, {
+    "@id" : "http://mapping.example.com/pom_9"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_2"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_Visibility_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_14"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Visibility"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_49"
+  }, {
+    "@id" : "http://mapping.example.com/pom_50"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_14"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/map_algiersWeatherOntology_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#TriplesMap" ],
+  "http://semweb.mmlab.be/ns/rml#logicalSource" : [ {
+    "@id" : "http://mapping.example.com/source_0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "algiersWeatherOntology"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateObjectMap" : [ {
+    "@id" : "http://mapping.example.com/pom_0"
+  }, {
+    "@id" : "http://mapping.example.com/pom_1"
+  }, {
+    "@id" : "http://mapping.example.com/pom_2"
+  }, {
+    "@id" : "http://mapping.example.com/pom_3"
+  }, {
+    "@id" : "http://mapping.example.com/pom_4"
+  }, {
+    "@id" : "http://mapping.example.com/pom_5"
+  }, {
+    "@id" : "http://mapping.example.com/pom_6"
+  } ],
+  "http://www.w3.org/ns/r2rml#subjectMap" : [ {
+    "@id" : "http://mapping.example.com/s_0"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://dbpedia.org/resource/Ceuta"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "DryBulbTemperature"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "DewPointTemperature"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "ExtraterrestrialHorizontalRadiation"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/WattHourPerSquareMetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "GlobalHorizontalRadiation"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/WattHourPerSquareMetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "DiffuseHorizontalRadiation"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/WattHourPerSquareMetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "Albedo"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/WattHourPerSquareMetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "AerosolOpticalDepth"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/Thousandths"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "DirectNormalRadiation"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/WattHourPerSquareMetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "ExtraterrestrialDirectNormalRadiation"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/WattHourPerSquareMetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "Year"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "HorizontalInfraredRadiationIntensity"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/WattHourPerSquareMetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "RelativeHumidity"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/percent"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "DiffuseHorizontalIlluminance"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "DirectNormalIlluminance"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "GlobalHorizontalIlluminance"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "ZenithLuminance"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "AtmosphericStationPressure"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "Month"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "LiquidPrecipitationDepth"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "LiquidPrecipitationQuantity"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hour"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "PrecipitableWater"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "DaysSinceLastSnowfall"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/day"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "SnowDepth"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "OpaqueSkyCover"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/TenthsOfCoverage"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "TotalSkyCover"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.oeg-weather.es/2020/weat/TenthsOfCoverage"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "Day"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "WindDirection"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degree"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "WindSpeed"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerSecond-Time"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "CeilingHeight"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/metre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "PresentWeatherCodes"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "PresentWeatherObservation"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "Hour"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "Visibility"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "Minute"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://semweb.mmlab.be/ns/rml#reference" : [ {
+    "@value" : "DataSourceAndUncertaintyFlags"
+  } ],
+  "http://www.w3.org/ns/r2rml#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#Literal"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/om_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#ObjectMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@value" : "http://epw.linkeddata.es/vocab#EPW"
+  } ],
+  "http://www.w3.org/ns/r2rml#termType" : [ {
+    "@id" : "http://www.w3.org/ns/r2rml#IRI"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#city"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#dryBulbTemperature"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#dewPointTemperature"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#extraterrestrialHorizontalRadiation"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#globalHorizontalRadiation"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#diffuseHorizontalRadiation"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#albedo"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#aerosolOpticalDepth"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#directNormalRadiation"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#extraterrestrialDirectNormalRadiation"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#year"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#horizontalInfraredRadiationIntensity"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#relativeHumidity"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#diffuseHorizontalIlluminance"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#directNormalIlluminance"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#globalHorizontalIlluminance"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#zenithLuminance"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#atmosphericStationPressure"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#month"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#liquidPrecipitationDepth"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#liquidPrecipitationQuantity"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#precipitableWater"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#daysSinceLastSnowfall"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#snowDepth"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#opaqueSkyCover"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#totalskyCover"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#day"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#windDirection"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#windSpeed"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#ceilingHeight"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#presentWeatherCodes"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#presentWeatherObservation"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#hour"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#visibility"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#minute"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://epw.linkeddata.es/vocab#dataSourceAndUncertaintyFlags"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pm_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateMap" ],
+  "http://www.w3.org/ns/r2rml#constant" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_0"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_0"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_1"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_1"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_10"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_10"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_11"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_11"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_12"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_12"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_13"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_13"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_14"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_14"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_15"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_15"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_16"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_16"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_17"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_17"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_18"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_18"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_19"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_19"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_2"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_2"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_20"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_20"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_21"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_21"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_22"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_22"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_23"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_23"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_24"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_24"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_25"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_25"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_26"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_26"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_27"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_27"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_28"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_28"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_29"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_29"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_3"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_3"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_30"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_30"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_31"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_31"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_32"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_32"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_33"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_33"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_34"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_34"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_35"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_35"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_36"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_36"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_37"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_37"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_38"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_38"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_39"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_39"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_4"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_4"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_40"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_40"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_41"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_41"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_42"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_42"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_43"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_43"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_44"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_44"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_45"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_45"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_46"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_46"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_47"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_47"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_48"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_48"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_49"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_49"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_5"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_5"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_50"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_50"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_6"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_6"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_7"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_7"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_8"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_8"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/pom_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#PredicateObjectMap" ],
+  "http://www.w3.org/ns/r2rml#objectMap" : [ {
+    "@id" : "http://mapping.example.com/om_9"
+  } ],
+  "http://www.w3.org/ns/r2rml#predicateMap" : [ {
+    "@id" : "http://mapping.example.com/pm_9"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/{DataSourceAndUncertaintyFlags}"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/atmosphericPhenomenon1/wind"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/ceilingHeight"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/presentWeatherCodes"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/presentWeatherObservation"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/visibility"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/temperature1"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/radiation1"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/humidity1"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/illuminance"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/pressure1"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/precipitation1"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/precipitation1/"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/s_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/r2rml#SubjectMap" ],
+  "http://www.w3.org/ns/r2rml#template" : [ {
+    "@value" : "http://epw.linkeddata.es/resources/ceuta/{Year}-{Month}-{Day}-{Hour}-{Minute}/skyCover1"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://mapping.example.com/source_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semweb.mmlab.be/ns/rml#LogicalSource" ],
+  "http://semweb.mmlab.be/ns/rml#referenceFormulation" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/ql#CSV"
+  } ],
+  "http://semweb.mmlab.be/ns/rml#source" : [ {
+    "@value" : "/app/data/Ceuta.csv"
+  } ]
+}, {
+  "@id" : "http://semweb.mmlab.be/ns/rml#LogicalSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semweb.mmlab.be/ns/rml#logicalSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://semweb.mmlab.be/ns/rml#reference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://semweb.mmlab.be/ns/rml#referenceFormulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://semweb.mmlab.be/ns/rml#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#ObjectMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#PredicateMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#PredicateObjectMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#SubjectMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#TriplesMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#constant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#datatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#objectMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#predicateMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#predicateObjectMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#subjectMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#template",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/r2rml#termType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
