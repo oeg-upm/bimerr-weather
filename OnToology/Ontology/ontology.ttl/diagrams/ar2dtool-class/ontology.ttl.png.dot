@@ -1,36 +1,36 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "https://saref.etsi.org/core/Device" "https://saref.etsi.org/core/FeatureOfInterest" "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" "https://w3id.org/def/saref4city#AdministrativeArea" "https://saref.etsi.org/core/Measurement" "https://saref.etsi.org/core/Property" ":UnitOfMeasure" ; /*classes style*/
-	"NULL" -> "https://saref.etsi.org/core/hasMeasurement" [ label = "owl:onProperty" ];
-	"NULL" -> "http://www.w3.org/2003/01/geo/wgs84_pos#location" [ label = "owl:onProperty" ];
-	"NULL" -> "https://saref.etsi.org/core/isControlledByDevice" [ label = "owl:onProperty" ];
+node [shape = rectangle, color="orange"]; "saref:Device" "saref:FeatureOfInterest" "wgs84_pos:SpatialThing" "s4city:AdministrativeArea" "saref:Measurement" "saref:Property" ":UnitOfMeasure" ; /*classes style*/
+	"NULL" -> "saref:hasMeasurement" [ label = "owl:onProperty" ];
+	"NULL" -> "wgs84_pos:location" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:isControlledByDevice" [ label = "owl:onProperty" ];
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://saref.etsi.org/core/Property" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://saref.etsi.org/core/Device" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://saref.etsi.org/core/isPropertyOf" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:Property" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "weat:locatedIn" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:Device" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "saref:isPropertyOf" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:decimal" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://saref.etsi.org/core/relatesToMeasurement" [ label = "owl:onProperty" ];
-	"NULL" -> "https://saref.etsi.org/core/isMeasuredIn" [ label = "owl:onProperty" ];
-	"NULL" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "http://www.w3.org/2003/01/geo/wgs84_pos#lat" [ label = "owl:onProperty" ];
-	"NULL" -> "http://www.w3.org/2003/01/geo/wgs84_pos#long" [ label = "owl:onProperty" ];
-	"NULL" -> "base:locatedIn" [ label = "owl:onProperty" ];
-	"NULL" -> "http://www.w3.org/2003/01/geo/wgs84_pos#alt" [ label = "owl:onProperty" ];
-	"NULL" -> "https://saref.etsi.org/core/isMeasuredByDevice" [ label = "owl:onProperty" ];
-	"NULL" -> "https://saref.etsi.org/core/relatesToProprety" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:relatesToMeasurement" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:isMeasuredIn" [ label = "owl:onProperty" ];
+	"NULL" -> "wgs84_pos:SpatialThing" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "wgs84_pos:lat" [ label = "owl:onProperty" ];
+	"NULL" -> "wgs84_pos:long" [ label = "owl:onProperty" ];
+	"NULL" -> "wgs84_pos:alt" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:isMeasuredByDevice" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:relatesToProprety" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:dateTime" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://saref.etsi.org/core/hasProperty" [ label = "owl:onProperty" ];
-	"NULL" -> "https://saref.etsi.org/core/Measurement" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://saref.etsi.org/core/hasTimeStamp" [ label = "owl:onProperty" ];
-	"NULL" -> "https://saref.etsi.org/core/isMeasurementOf" [ label = "owl:onProperty" ];
-	"NULL" -> "https://saref.etsi.org/core/measurementMadeBy" [ label = "owl:onProperty" ];
-	"NULL" -> "https://w3id.org/def/saref4city#AdministrativeArea" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://saref.etsi.org/core/FeatureOfInterest" [ label = "owl:someValuesFrom" ];
-	"https://saref.etsi.org/core/hasProperty" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
-	"http://www.w3.org/2003/01/geo/wgs84_pos#location" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
-	"https://bimerr.iot.linkeddata.es/def/weat" -> "http://www.oeg-upm.net/" [ label = ":publisher" ];
-	"https://bimerr.iot.linkeddata.es/def/weat" -> "http://creativecommons.org/licenses/by/4.0/" [ label = ":license" ];
-	"owl:Thing" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "http://www.w3.org/2003/01/geo/wgs84_pos#location" ];
+	"NULL" -> "saref:hasProperty" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:Measurement" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "saref:hasTimeStamp" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:isMeasurementOf" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:measurementMadeBy" [ label = "owl:onProperty" ];
+	"NULL" -> "s4city:AdministrativeArea" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "saref:FeatureOfInterest" [ label = "owl:someValuesFrom" ];
+	"wgs84_pos:location" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"saref:hasProperty" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"https://bimerr.iot.linkeddata.es/def/weather" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "terms:license" ];
+	"https://bimerr.iot.linkeddata.es/def/weather" -> "http://www.oeg-upm.net/" [ label = "terms:publisher" ];
+	"owl:Thing" -> "wgs84_pos:SpatialThing" [ label = "wgs84_pos:location" ];
 
 }
