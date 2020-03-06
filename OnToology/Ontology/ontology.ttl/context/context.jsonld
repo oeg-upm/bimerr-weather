@@ -1,0 +1,206 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://w3id.org/saref#UnitOfMeasure"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isControlledByDevice",
+      "@type" : "@id"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "Humidity" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Humidity"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Country" : {
+      "@id" : "https://w3id.org/def/saref4city#Country"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "decription" : {
+      "@id" : "http://purl.org/dc/elements/1.1/decription"
+    },
+    "Ground" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Ground"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+    },
+    "measuresProperty" : {
+      "@id" : "https://saref.etsi.org/core/measuresProperty",
+      "@type" : "@id"
+    },
+    "SkyCover" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#SkyCover"
+    },
+    "makeMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/makeMeasurement",
+      "@type" : "@id"
+    },
+    "domainIncludes" : {
+      "@id" : "http://schema.org/domainIncludes"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Wind" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Wind"
+    },
+    "Measurement" : {
+      "@id" : "https://saref.etsi.org/core/Measurement"
+    },
+    "Snow" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Snow"
+    },
+    "Temperature" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Temperature"
+    },
+    "hasProperty" : {
+      "@id" : "https://saref.etsi.org/core/hasProperty",
+      "@type" : "@id"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "measurementMadeBy" : {
+      "@id" : "https://saref.etsi.org/core/measurementMadeBy",
+      "@type" : "@id"
+    },
+    "Precipitation" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Precipitation"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "alt" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+    },
+    "Pressure" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Pressure"
+    },
+    "isMeasurementOf" : {
+      "@id" : "https://saref.etsi.org/core/isMeasurementOf",
+      "@type" : "@id"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "hasTimeStamp" : {
+      "@id" : "https://saref.etsi.org/core/hasTimeStamp"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Point" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "Property" : {
+      "@id" : "https://saref.etsi.org/core/Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredIn",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "relatesToProprety" : {
+      "@id" : "https://saref.etsi.org/core/relatesToProprety",
+      "@type" : "@id"
+    },
+    "locatedIn" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#locatedIn",
+      "@type" : "@id"
+    },
+    "isPropertyOf" : {
+      "@id" : "https://saref.etsi.org/core/isPropertyOf",
+      "@type" : "@id"
+    },
+    "Illuminance" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Illuminance"
+    },
+    "City" : {
+      "@id" : "https://w3id.org/def/saref4city#City"
+    },
+    "Radiation" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Radiation"
+    },
+    "AtmosphericPhenomenon" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "hasMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/hasMeasurement",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "controlsProperty" : {
+      "@id" : "https://saref.etsi.org/core/controlsProperty",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "Device" : {
+      "@id" : "https://saref.etsi.org/core/Device"
+    },
+    "AdministrativeArea" : {
+      "@id" : "https://w3id.org/def/saref4city#AdministrativeArea"
+    },
+    "Time" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Time"
+    },
+    "Storm" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Storm"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "WeatherProperty" : {
+      "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+    }
+  }
+}
