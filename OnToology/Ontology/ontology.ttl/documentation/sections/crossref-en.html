@@ -80,10 +80,6 @@ This section provides details for each class and property defined by BIMERR Weat
             title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
       </li>
       <li>
-         <a href="#Time"
-            title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
-      </li>
-      <li>
          <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
       </li>
       <li>
@@ -724,59 +720,6 @@ This section provides details for each class and property defined by BIMERR Weat
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Time">
-      <h3>Time<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#Time</p>
-      <div class="comment">
-         <span class="markdown">The indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#WeatherProperty"
-               title="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty">Weather Property</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#apparentTemperatureHighTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime">apparent temperature high time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#apparentTemperatureLowTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime">apparent temperature low time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#apparentTemperatureMaxTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime">apparent temperature max time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#apparentTemperatureMinTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime">apparent temperature min time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Period"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Period">period</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#precipIntensityMaxTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime">precip intensity max time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#sunriseTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#sunriseTime">sunrise time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#sunsetTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#sunsetTime">sunset time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperatureHighTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime">temperature high time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperatureLowTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime">temperature low time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperatureMaxTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime">temperature max time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperatureMinTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime">temperature min time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#time">time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#uvIndexTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime">uv index time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#windGustTime"
-               title="https://bimerr.iot.linkeddata.es/def/weather#windGustTime">wind gust time</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="https://w3id.org/saref#UnitOfMeasure">
       <h3>Unit of Measure<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -888,8 +831,6 @@ This section provides details for each class and property defined by BIMERR Weat
                title="https://bimerr.iot.linkeddata.es/def/weather#SkyCover">Sky Cover</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Temperature"
                title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -1280,6 +1221,9 @@ This section provides details for each class and property defined by BIMERR Weat
          <a href="#https://saref.etsi.org/core/hasTimeStamp" title="https://saref.etsi.org/core/hasTimeStamp">has time stamp</a>
       </li>
       <li>
+         <a href="#https://saref.etsi.org/core/hasValue" title="https://saref.etsi.org/core/hasValue">has value</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">latitude</a>
       </li>
       <li>
@@ -1308,6 +1252,17 @@ above the local reference ellipsoid).</span>
       <div class="comment">
          <span class="markdown">Time stamp of the measure. Identify when the measurement applies to the property, which can be used either for single measurements
 or for series of measurements</span>
+      </div>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core/hasValue">
+      <h3>has value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core/hasValue</p>
+      <div class="comment">
+         <span class="markdown">Value of a measurement</span>
       </div>
    </div>
    <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
@@ -1360,21 +1315,9 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
-         <a href="#apparentTemperatureHighTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime">
-            <span>apparent temperature high time</span>
-         </a>
-      </li>
-      <li>
          <a href="#apparentTemperatureLow"
             title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow">
             <span>apparent temperature low</span>
-         </a>
-      </li>
-      <li>
-         <a href="#apparentTemperatureLowTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime">
-            <span>apparent temperature low time</span>
          </a>
       </li>
       <li>
@@ -1384,21 +1327,9 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
-         <a href="#apparentTemperatureMaxTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime">
-            <span>apparent temperature max time</span>
-         </a>
-      </li>
-      <li>
          <a href="#apparentTemperatureMin"
             title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin">
             <span>apparent temperature min</span>
-         </a>
-      </li>
-      <li>
-         <a href="#apparentTemperatureMinTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime">
-            <span>apparent temperature min time</span>
          </a>
       </li>
       <li>
@@ -1720,12 +1651,6 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
-         <a href="#Period"
-            title="https://bimerr.iot.linkeddata.es/def/weather#Period">
-            <span>period</span>
-         </a>
-      </li>
-      <li>
          <a href="#precipAccumulation"
             title="https://bimerr.iot.linkeddata.es/def/weather#precipAccumulation">
             <span>precip accumulation</span>
@@ -1747,12 +1672,6 @@ or for series of measurements</span>
          <a href="#precipIntensityMax"
             title="https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax">
             <span>precip intensity max</span>
-         </a>
-      </li>
-      <li>
-         <a href="#precipIntensityMaxTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime">
-            <span>precip intensity max time</span>
          </a>
       </li>
       <li>
@@ -1804,18 +1723,6 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
-         <a href="#sunriseTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#sunriseTime">
-            <span>sunrise time</span>
-         </a>
-      </li>
-      <li>
-         <a href="#sunsetTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#sunsetTime">
-            <span>sunset time</span>
-         </a>
-      </li>
-      <li>
          <a href="#temperature"
             title="https://bimerr.iot.linkeddata.es/def/weather#temperature">
             <span>temperature</span>
@@ -1828,21 +1735,9 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
-         <a href="#temperatureHighTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime">
-            <span>temperature high time</span>
-         </a>
-      </li>
-      <li>
          <a href="#temperatureLow"
             title="https://bimerr.iot.linkeddata.es/def/weather#temperatureLow">
             <span>temperature low</span>
-         </a>
-      </li>
-      <li>
-         <a href="#temperatureLowTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime">
-            <span>temperature low time</span>
          </a>
       </li>
       <li>
@@ -1852,21 +1747,9 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
-         <a href="#temperatureMaxTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime">
-            <span>temperature max time</span>
-         </a>
-      </li>
-      <li>
          <a href="#temperatureMin"
             title="https://bimerr.iot.linkeddata.es/def/weather#temperatureMin">
             <span>temperature min</span>
-         </a>
-      </li>
-      <li>
-         <a href="#temperatureMinTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime">
-            <span>temperature min time</span>
          </a>
       </li>
       <li>
@@ -1882,12 +1765,6 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
-         <a href="#time"
-            title="https://bimerr.iot.linkeddata.es/def/weather#time">
-            <span>time</span>
-         </a>
-      </li>
-      <li>
          <a href="#TotalSkyCover"
             title="https://bimerr.iot.linkeddata.es/def/weather#TotalSkyCover">
             <span>total sky cover</span>
@@ -1897,12 +1774,6 @@ or for series of measurements</span>
          <a href="#uvIndex"
             title="https://bimerr.iot.linkeddata.es/def/weather#uvIndex">
             <span>uv index</span>
-         </a>
-      </li>
-      <li>
-         <a href="#uvIndexTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime">
-            <span>uv index time</span>
          </a>
       </li>
       <li>
@@ -1939,12 +1810,6 @@ or for series of measurements</span>
          <a href="#windGust"
             title="https://bimerr.iot.linkeddata.es/def/weather#windGust">
             <span>wind gust</span>
-         </a>
-      </li>
-      <li>
-         <a href="#windGustTime"
-            title="https://bimerr.iot.linkeddata.es/def/weather#windGustTime">
-            <span>wind gust time</span>
          </a>
       </li>
       <li>
@@ -2036,25 +1901,6 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="apparentTemperatureHighTime">
-      <h3>apparent temperature high time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property apparent temperature high time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="apparentTemperatureLow">
       <h3>apparent temperature low<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2070,25 +1916,6 @@ or for series of measurements</span>
          <dd>
             <a href="#Temperature"
                title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="apparentTemperatureLowTime">
-      <h3>apparent temperature low time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property apparent temperature low time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2112,25 +1939,6 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="apparentTemperatureMaxTime">
-      <h3>apparent temperature max time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property apparent temperature max time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="apparentTemperatureMin">
       <h3>apparent temperature min<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2146,25 +1954,6 @@ or for series of measurements</span>
          <dd>
             <a href="#Temperature"
                title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="apparentTemperatureMinTime">
-      <h3>apparent temperature min time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property apparent temperature min time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3088,25 +2877,6 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Period">
-      <h3>period<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#Period</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the preiod for the max, min and average temperature periods from EPW.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="precipAccumulation">
       <h3>precip accumulation<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3179,25 +2949,6 @@ or for series of measurements</span>
          <dd>
             <a href="#Precipitation"
                title="https://bimerr.iot.linkeddata.es/def/weather#Precipitation">Precipitation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="precipIntensityMaxTime">
-      <h3>precip intensity max time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property precipitation intensity max time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3348,44 +3099,6 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="sunriseTime">
-      <h3>sunrise time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#sunriseTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property sunrise time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="sunsetTime">
-      <h3>sunset time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#sunsetTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property sunset time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="temperature">
       <h3>temperature<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3424,25 +3137,6 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="temperatureHighTime">
-      <h3>temperature high time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property temperature high time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="temperatureLow">
       <h3>temperature low<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3458,25 +3152,6 @@ or for series of measurements</span>
          <dd>
             <a href="#Temperature"
                title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="temperatureLowTime">
-      <h3>temperature low time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property temperature low time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3500,25 +3175,6 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="temperatureMaxTime">
-      <h3>temperature max time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property temperature max time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="temperatureMin">
       <h3>temperature min<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3534,25 +3190,6 @@ or for series of measurements</span>
          <dd>
             <a href="#Temperature"
                title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="temperatureMinTime">
-      <h3>temperature min time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property temperature min time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3583,25 +3220,6 @@ or for series of measurements</span>
          <dt>belongs to</dt>
          <dd>
             <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="time">
-      <h3>time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#time</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property  time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3640,25 +3258,6 @@ or for series of measurements</span>
          <dd>
             <a href="#Radiation"
                title="https://bimerr.iot.linkeddata.es/def/weather#Radiation">Radiation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="uvIndexTime">
-      <h3>uv index time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property uv index time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3765,25 +3364,6 @@ or for series of measurements</span>
          <dd>
             <a href="#Wind"
                title="https://bimerr.iot.linkeddata.es/def/weather#Wind">wind</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="windGustTime">
-      <h3>wind gust time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#windGustTime</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the time property wind gust time from Dark Sky API.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Time"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Time">Time</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>

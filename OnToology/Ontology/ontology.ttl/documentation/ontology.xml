@@ -368,6 +368,16 @@ or for series of measurements</rdfs:comment>
     
 
 
+    <!-- https://saref.etsi.org/core/hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core/hasValue">
+        <rdfs:comment xml:lang="en">Value of a measurement</rdfs:comment>
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -557,17 +567,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
         <rdfs:comment xml:lang="en">The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density.</rdfs:comment>
         <rdfs:label xml:lang="en">Temperature</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#Time -->
-
-
-    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Time">
-        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
-        <rdfs:comment>The indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future.</rdfs:comment>
-        <rdfs:label xml:lang="en">Time</rdfs:label>
     </owl:Class>
     
 
@@ -1267,16 +1266,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#Period -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Period">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment xml:lang="en">An individual representing the preiod for the max, min and average temperature periods from EPW.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater -->
 
 
@@ -1413,32 +1402,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property apparent temperature high time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow -->
 
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
         <rdfs:comment>An individual representing the temperature property apparent temperature low from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property apparent temperature low time from Dark Sky API.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1453,32 +1422,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property apparent temperature max time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin -->
 
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
         <rdfs:comment>An individual representing the temperature property apparent temperature min from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property apparent temperature min time from Dark Sky API.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1573,16 +1522,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property precipitation intensity max time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#precipProbability -->
 
 
@@ -1612,26 +1551,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#sunriseTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#sunriseTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property sunrise time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#sunsetTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#sunsetTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property sunset time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#temperature -->
 
 
@@ -1652,32 +1571,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property temperature high time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureLow -->
 
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureLow">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
         <rdfs:comment>An individual representing the temperature property temperature low from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property temperature low time from Dark Sky API.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1692,16 +1591,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property temperature max time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureMin -->
 
 
@@ -1712,42 +1601,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property temperature min time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#time -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#time">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property  time from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#uvIndex -->
 
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#uvIndex">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
         <rdfs:comment>An individual representing the radiation property uvIndex from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property uv index time from Dark Sky API.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1768,16 +1627,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#windGust">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
         <rdfs:comment>An individual representing the wind property wind gust from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#windGustTime -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#windGustTime">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Time"/>
-        <rdfs:comment>An individual representing the time property wind gust time from Dark Sky API.</rdfs:comment>
     </owl:NamedIndividual>
     
 

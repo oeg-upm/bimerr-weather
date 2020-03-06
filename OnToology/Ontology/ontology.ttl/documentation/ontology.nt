@@ -187,6 +187,11 @@
 <https://saref.etsi.org/core/hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#comment> "Time stamp of the measure. Identify when the measurement applies to the property, which can be used either for single measurements\nor for series of measurements"@en .
 <https://saref.etsi.org/core/hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "has time stamp"@en .
 # 
+# https://saref.etsi.org/core/hasValue
+<https://saref.etsi.org/core/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Value of a measurement"@en .
+<https://saref.etsi.org/core/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
+# 
 # 
 # 
 # #################################################################
@@ -295,12 +300,6 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/
 <https://bimerr.iot.linkeddata.es/def/weather#Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> .
 <https://bimerr.iot.linkeddata.es/def/weather#Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density."@en .
 <https://bimerr.iot.linkeddata.es/def/weather#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#Time
-<https://bimerr.iot.linkeddata.es/def/weather#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://bimerr.iot.linkeddata.es/def/weather#Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> .
-<https://bimerr.iot.linkeddata.es/def/weather#Time> <http://www.w3.org/2000/01/rdf-schema#comment> "The indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future." .
-<https://bimerr.iot.linkeddata.es/def/weather#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Time"@en .
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty
 <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -661,11 +660,6 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#SkyCover> .
 <https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the sky cover property opaque sky cover from EPW." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#Period
-<https://bimerr.iot.linkeddata.es/def/weather#Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#Period> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the preiod for the max, min and average temperature periods from EPW."@en .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater
 <https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Precipitation> .
@@ -732,40 +726,20 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the temperature property apparent temperature high from Dark Sky API." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property apparent temperature high time from Dark Sky API." .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the temperature property apparent temperature low from Dark Sky API." .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property apparent temperature low time from Dark Sky API." .
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the temperature property apparent temperature max from Dark Sky API." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property apparent temperature max time from Dark Sky API." .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
 <https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the temperature property apparent temperature min from Dark Sky API." .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property apparent temperature min time from Dark Sky API." .
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#cloudCover
 <https://bimerr.iot.linkeddata.es/def/weather#cloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -812,11 +786,6 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Precipitation> .
 <https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the precipitation property precipitation intensity max from Dark Sky API." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime
-<https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property precipitation intensity max time from Dark Sky API." .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#precipProbability
 <https://bimerr.iot.linkeddata.es/def/weather#precipProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#precipProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Precipitation> .
@@ -831,16 +800,6 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Pressure> .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#sunriseTime
-<https://bimerr.iot.linkeddata.es/def/weather#sunriseTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#sunriseTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#sunriseTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property sunrise time from Dark Sky API." .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#sunsetTime
-<https://bimerr.iot.linkeddata.es/def/weather#sunsetTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#sunsetTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#sunsetTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property sunset time from Dark Sky API." .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#temperature
 <https://bimerr.iot.linkeddata.es/def/weather#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
@@ -851,55 +810,25 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the temperature property temperature high from Dark Sky API." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property temperature high time from Dark Sky API." .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#temperatureLow
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureLow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureLow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureLow> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the temperature property temperature low from Dark Sky API." .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property temperature low time from Dark Sky API." .
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#temperatureMax
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureMax> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the temperature property temperature max from Dark Sky API." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property temperature max time from Dark Sky API." .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#temperatureMin
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
 <https://bimerr.iot.linkeddata.es/def/weather#temperatureMin> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the temperature property temperature min from Dark Sky API." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property temperature min time from Dark Sky API." .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#time
-<https://bimerr.iot.linkeddata.es/def/weather#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#time> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property  time from Dark Sky API." .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#uvIndex
 <https://bimerr.iot.linkeddata.es/def/weather#uvIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#uvIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Radiation> .
 <https://bimerr.iot.linkeddata.es/def/weather#uvIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the radiation property uvIndex from Dark Sky API." .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime
-<https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property uv index time from Dark Sky API." .
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#windBearing
 <https://bimerr.iot.linkeddata.es/def/weather#windBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -910,11 +839,6 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#windGust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#windGust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Wind> .
 <https://bimerr.iot.linkeddata.es/def/weather#windGust> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the wind property wind gust from Dark Sky API." .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#windGustTime
-<https://bimerr.iot.linkeddata.es/def/weather#windGustTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#windGustTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Time> .
-<https://bimerr.iot.linkeddata.es/def/weather#windGustTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the time property wind gust time from Dark Sky API." .
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#windSpeed
 <https://bimerr.iot.linkeddata.es/def/weather#windSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -230,6 +230,12 @@ or for series of measurements"""@en ;
                    rdfs:label "has time stamp"@en .
 
 
+###  https://saref.etsi.org/core/hasValue
+saref:hasValue rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Value of a measurement"@en ;
+               rdfs:label "has value"@en .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -351,13 +357,6 @@ weat:Temperature rdf:type owl:Class ;
                  rdfs:subClassOf weat:WeatherProperty ;
                  rdfs:comment "The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density."@en ;
                  rdfs:label "Temperature"@en .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#Time
-weat:Time rdf:type owl:Class ;
-          rdfs:subClassOf weat:WeatherProperty ;
-          rdfs:comment "The indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future." ;
-          rdfs:label "Time"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty
@@ -775,12 +774,6 @@ weat:OpaqueSkycover rdf:type owl:NamedIndividual ,
                     rdfs:comment "An individual representing the sky cover property opaque sky cover from EPW." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#Period
-weat:Period rdf:type owl:NamedIndividual ,
-                     weat:Time ;
-            rdfs:comment "An individual representing the preiod for the max, min and average temperature periods from EPW."@en .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater
 weat:PrecipitableWater rdf:type owl:NamedIndividual ,
                                 weat:Precipitation ;
@@ -861,22 +854,10 @@ weat:apparentTemperatureHigh rdf:type owl:NamedIndividual ,
                              rdfs:comment "An individual representing the temperature property apparent temperature high from Dark Sky API." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime
-weat:apparentTemperatureHighTime rdf:type owl:NamedIndividual ,
-                                          weat:Time ;
-                                 rdfs:comment "An individual representing the time property apparent temperature high time from Dark Sky API." .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow
 weat:apparentTemperatureLow rdf:type owl:NamedIndividual ,
                                      weat:Temperature ;
                             rdfs:comment "An individual representing the temperature property apparent temperature low from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime
-weat:apparentTemperatureLowTime rdf:type owl:NamedIndividual ,
-                                         weat:Time ;
-                                rdfs:comment "An individual representing the time property apparent temperature low time from Dark Sky API." .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax
@@ -885,22 +866,10 @@ weat:apparentTemperatureMax rdf:type owl:NamedIndividual ,
                             rdfs:comment "An individual representing the temperature property apparent temperature max from Dark Sky API." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime
-weat:apparentTemperatureMaxTime rdf:type owl:NamedIndividual ,
-                                         weat:Time ;
-                                rdfs:comment "An individual representing the time property apparent temperature max time from Dark Sky API." .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin
 weat:apparentTemperatureMin rdf:type owl:NamedIndividual ,
                                      weat:Temperature ;
                             rdfs:comment "An individual representing the temperature property apparent temperature min from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime
-weat:apparentTemperatureMinTime rdf:type owl:NamedIndividual ,
-                                         weat:Time ;
-                                rdfs:comment "An individual representing the time property apparent temperature min time from Dark Sky API." .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#cloudCover
@@ -957,12 +926,6 @@ weat:precipIntensityMax rdf:type owl:NamedIndividual ,
                         rdfs:comment "An individual representing the precipitation property precipitation intensity max from Dark Sky API." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime
-weat:precipIntensityMaxTime rdf:type owl:NamedIndividual ,
-                                     weat:Time ;
-                            rdfs:comment "An individual representing the time property precipitation intensity max time from Dark Sky API." .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#precipProbability
 weat:precipProbability rdf:type owl:NamedIndividual ,
                                 weat:Precipitation ;
@@ -980,18 +943,6 @@ weat:pressure rdf:type owl:NamedIndividual ,
                        weat:Pressure .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#sunriseTime
-weat:sunriseTime rdf:type owl:NamedIndividual ,
-                          weat:Time ;
-                 rdfs:comment "An individual representing the time property sunrise time from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#sunsetTime
-weat:sunsetTime rdf:type owl:NamedIndividual ,
-                         weat:Time ;
-                rdfs:comment "An individual representing the time property sunset time from Dark Sky API." .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#temperature
 weat:temperature rdf:type owl:NamedIndividual ,
                           weat:Temperature ;
@@ -1004,22 +955,10 @@ weat:temperatureHigh rdf:type owl:NamedIndividual ,
                      rdfs:comment "An individual representing the temperature property temperature high from Dark Sky API." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime
-weat:temperatureHighTime rdf:type owl:NamedIndividual ,
-                                  weat:Time ;
-                         rdfs:comment "An individual representing the time property temperature high time from Dark Sky API." .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#temperatureLow
 weat:temperatureLow rdf:type owl:NamedIndividual ,
                              weat:Temperature ;
                     rdfs:comment "An individual representing the temperature property temperature low from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime
-weat:temperatureLowTime rdf:type owl:NamedIndividual ,
-                                 weat:Time ;
-                        rdfs:comment "An individual representing the time property temperature low time from Dark Sky API." .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#temperatureMax
@@ -1028,40 +967,16 @@ weat:temperatureMax rdf:type owl:NamedIndividual ,
                     rdfs:comment "An individual representing the temperature property temperature max from Dark Sky API." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime
-weat:temperatureMaxTime rdf:type owl:NamedIndividual ,
-                                 weat:Time ;
-                        rdfs:comment "An individual representing the time property temperature max time from Dark Sky API." .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#temperatureMin
 weat:temperatureMin rdf:type owl:NamedIndividual ,
                              weat:Temperature ;
                     rdfs:comment "An individual representing the temperature property temperature min from Dark Sky API." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime
-weat:temperatureMinTime rdf:type owl:NamedIndividual ,
-                                 weat:Time ;
-                        rdfs:comment "An individual representing the time property temperature min time from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#time
-weat:time rdf:type owl:NamedIndividual ,
-                   weat:Time ;
-          rdfs:comment "An individual representing the time property  time from Dark Sky API." .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#uvIndex
 weat:uvIndex rdf:type owl:NamedIndividual ,
                       weat:Radiation ;
              rdfs:comment "An individual representing the radiation property uvIndex from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime
-weat:uvIndexTime rdf:type owl:NamedIndividual ,
-                          weat:Time ;
-                 rdfs:comment "An individual representing the time property uv index time from Dark Sky API." .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#windBearing
@@ -1074,12 +989,6 @@ weat:windBearing rdf:type owl:NamedIndividual ,
 weat:windGust rdf:type owl:NamedIndividual ,
                        weat:Wind ;
               rdfs:comment "An individual representing the wind property wind gust from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#windGustTime
-weat:windGustTime rdf:type owl:NamedIndividual ,
-                           weat:Time ;
-                  rdfs:comment "An individual representing the time property wind gust time from Dark Sky API." .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#windSpeed
