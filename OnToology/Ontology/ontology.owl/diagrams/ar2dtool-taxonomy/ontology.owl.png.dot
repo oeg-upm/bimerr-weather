@@ -1,23 +1,24 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "weat:Snow" "weat:Pressure" "weat:Humidity" "saref:Device" "weat:Illuminance" "weat:Temperature" "weat:WeatherProperty" "weat:Radiation" "weat:SkyCover" "wgs84_pos:SpatialThing" "weat:AtmosphericPhenomenon" "s4city:Country" "s4city:AdministrativeArea" "weat:Storm" "weat:Time" "http://www.w3.org/ns/sosa/Sensor" "saref:Property" "s4city:City" "wgs84_pos:Point" "weat:Wind" "weat:Precipitation" ; /*classes style*/
-	"weat:WeatherProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
-	"weat:Illuminance" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
-	"weat:SkyCover" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
-	"weat:Time" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
-	"weat:Radiation" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
-	"weat:Wind" -> "weat:AtmosphericPhenomenon" [ label = "rdfs:subClassOf" ];
-	"weat:Pressure" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "base:Snow" "base:Pressure" "base:Humidity" "saref:Device" "base:Illuminance" "base:Temperature" "base:WeatherProperty" "base:Radiation" "base:SkyCover" "wgs84_pos:SpatialThing" "base:AtmosphericPhenomenon" "s4city:Country" "s4city:AdministrativeArea" "base:Storm" "base:Time" "base:Ground" "http://www.w3.org/ns/sosa/Sensor" "saref:Property" "s4city:City" "wgs84_pos:Point" "base:Wind" "base:Precipitation" ; /*classes style*/
+	"base:WeatherProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"base:Illuminance" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:SkyCover" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:Time" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:Radiation" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:Wind" -> "base:AtmosphericPhenomenon" [ label = "rdfs:subClassOf" ];
+	"base:Pressure" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
 	"wgs84_pos:Point" -> "wgs84_pos:SpatialThing" [ label = "rdfs:subClassOf" ];
 	"s4city:City" -> "s4city:AdministrativeArea" [ label = "rdfs:subClassOf" ];
-	"weat:Temperature" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
-	"weat:Snow" -> "weat:Precipitation" [ label = "rdfs:subClassOf" ];
-	"weat:Precipitation" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:Temperature" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:Snow" -> "base:Precipitation" [ label = "rdfs:subClassOf" ];
+	"base:Precipitation" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:Ground" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/sosa/Sensor" -> "saref:Device" [ label = "rdfs:subClassOf" ];
-	"weat:AtmosphericPhenomenon" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
-	"weat:Storm" -> "weat:Precipitation" [ label = "rdfs:subClassOf" ];
-	"weat:Humidity" -> "weat:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:AtmosphericPhenomenon" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
+	"base:Storm" -> "base:Precipitation" [ label = "rdfs:subClassOf" ];
+	"base:Humidity" -> "base:WeatherProperty" [ label = "rdfs:subClassOf" ];
 	"s4city:Country" -> "s4city:AdministrativeArea" [ label = "rdfs:subClassOf" ];
 
 }

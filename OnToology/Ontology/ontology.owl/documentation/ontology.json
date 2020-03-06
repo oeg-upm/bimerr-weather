@@ -210,6 +210,12 @@
   "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
 }, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
   "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
 }, {
@@ -238,6 +244,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
 }, {
   "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/percent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
@@ -363,39 +372,6 @@
     "@value" : "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/decription" : [ {
-    "@language" : "en",
-    "@value" : "Ontology for weather phenomena and exterior conditions."
-  } ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@language" : "en",
-    "@value" : "BIMERR Weather Ontology"
-  } ],
-  "http://purl.org/dc/terms/abstract" : [ {
-    "@language" : "en",
-    "@value" : "Ontology for weather phenomena and exterior conditions."
-  } ],
-  "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Serge Chavez Feria https://github.com/Serge3006"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Salvador González Gerpe https://www.linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "http://www.oeg-upm.net/"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "weat"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://bimerr.iot.linkeddata.es/def/weat"
-  } ]
-}, {
   "@id" : "https://bimerr.iot.linkeddata.es/def/weat#AerosolOpticalDepth",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -426,6 +402,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Pressure" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the pressure property atmospheric station pressure."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#AverageTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the average temperature for period from EPW."
   } ]
 }, {
   "@id" : "https://bimerr.iot.linkeddata.es/def/weat#CeillingHeight",
@@ -506,6 +489,55 @@
     "@value" : "An individual representing the radiation property global horizontal radiation from EPW."
   } ]
 }, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Ground",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ground properties where the measures are made."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground conductivity from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundDensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground density from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundSpecificHeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground specific heat from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground temperature from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundTemperatureDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground temperature depth from EPW."
+  } ]
+}, {
   "@id" : "https://bimerr.iot.linkeddata.es/def/weat#HorizontalInfraredRadiationIntensity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -553,10 +585,31 @@
     "@value" : "An individual representing the precipitation property liquid precipitation quantity from EPW."
   } ]
 }, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#MaxTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the max temperature for period from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#MinTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the min temperature for period from EPW."
+  } ]
+}, {
   "@id" : "https://bimerr.iot.linkeddata.es/def/weat#OpaqueSkycover",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#SkyCover" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the sky cover property opaque sky cover from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Period",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the preiod for the max, min and average temperature periods from EPW."
   } ]
 }, {
   "@id" : "https://bimerr.iot.linkeddata.es/def/weat#PrecipitableWater",
@@ -998,6 +1051,39 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Wind" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the wind property wind speed from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/decription" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for weather phenomena and exterior conditions."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "BIMERR Weather Ontology"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for weather phenomena and exterior conditions."
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Serge Chavez Feria https://github.com/Serge3006"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Salvador González Gerpe https://www.linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://www.oeg-upm.net/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "weat"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://bimerr.iot.linkeddata.es/def/weather"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core/Device",
