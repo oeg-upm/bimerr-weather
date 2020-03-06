@@ -110,7 +110,7 @@
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#locatedIn"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#locatedIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/def/saref4city#AdministrativeArea"
@@ -372,7 +372,7 @@
     "@value" : "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/decription" : [ {
     "@language" : "en",
@@ -402,22 +402,22 @@
     "@value" : "weat"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://bimerr.iot.linkeddata.es/def/weat"
+    "@value" : "https://bimerr.iot.linkeddata.es/def/weather"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#AerosolOpticalDepth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AerosolOpticalDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property aerosol optical depth from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Albedo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Albedo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property albedo from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#AtmosphericPhenomenon",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -428,101 +428,101 @@
     "@value" : "Atmospheric Phenomenon"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#AtmosphericStationPressure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Pressure" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Pressure" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the pressure property atmospheric station pressure."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#AverageTemperatureForPeriod",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the average temperature for period from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#CeillingHeight",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the weather property ceilling height."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#DataSourceAndUncertaintyFlags",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DataSourceAndUncertaintyFlags",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the weather property data source and uncertainty flags."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#DaysSinceLastSnowfall",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Snow" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DaysSinceLastSnowfall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Snow" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the snow property days since last snowfall time from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#DewPointTemperature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DewPointTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property dew point temperature from EPW and Dark Sky API, first measured in Celsius degrees and second in Fahrenheit degrees."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#DiffuseHorizontalRadiation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DiffuseHorizontalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property diffuse horizontal radiation from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#DirectHorizontalIlluminance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Illuminance" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DirectHorizontalIlluminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Illuminance" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the illuminance property direct horizontal illuminance from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#DirectNormalIlluminance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Illuminance" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DirectNormalIlluminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Illuminance" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the illuminance property direct normal illuminance from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#DirectNormalRadiation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DirectNormalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property direct normal radiation from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#DryBulbTemperature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DryBulbTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property dry bulb temperature from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#ExtraterrestialDirectNormalRadiation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialDirectNormalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property extraterrestial direct normal radiation from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#ExtraterrestialHorizontalRadiation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialHorizontalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property extrzaterrestial horizontal radiation from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GlobalHorizontalIlluminance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Illuminance" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Illuminance" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the illuminance property global horizontal illuminance from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GlobalHorizontalRadiation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property global horizontal radiation from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Ground",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Ground",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -533,51 +533,51 @@
     "@value" : "Ground"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundConductivity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the ground conductivity from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundDensity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundDensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the ground density from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundSpecificHeat",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundSpecificHeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the ground specific heat from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundTemperature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the ground temperature from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#GroundTemperatureDepth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Ground" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundTemperatureDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the ground temperature depth from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#HorizontalInfraredRadiationIntensity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#HorizontalInfraredRadiationIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property horizontal infrared radiation instensity from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Humidity",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Humidity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Measure of the amount of moisture in the air.  It tells you how comfortable it is to be outside, and if there is enough moisture to create clouds and rain."
@@ -587,10 +587,10 @@
     "@value" : "Humidity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Illuminance",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Illuminance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The total luminous flux incident on a surface, per unit area. It is a measure of how much the incident light illuminates the surface, wavelength-weighted by the luminosity function to correlate with human brightness perception."
@@ -600,58 +600,58 @@
     "@value" : "Illuminance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#InchesPerHour",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#InchesPerHour",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#LiquidPrecipitationDepth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property liquid precipitation depth from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#LiquidPrecipitationQuantity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property liquid precipitation quantity from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#MaxTemperatureForPeriod",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the max temperature for period from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#MinTemperatureForPeriod",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the min temperature for period from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#OpaqueSkycover",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#SkyCover" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#SkyCover" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the sky cover property opaque sky cover from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Period",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Period",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An individual representing the preiod for the max, min and average temperature periods from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#PrecipitableWater",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property precipitable water from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Precipitation",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Precipitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Any product of the condensation of atmospheric water vapour that falls under gravity from clouds. The main forms of precipitation include drizzle, rain, sleet, snow, ice pellets, graupel and hail."
@@ -661,19 +661,19 @@
     "@value" : "Precipitation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#PresentWeatherCodes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherCodes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the weather property present weather codes from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#PresentWeatherObservation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty" ]
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Pressure",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Pressure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -684,10 +684,10 @@
     "@value" : "Pressure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Radiation",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Radiation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -698,16 +698,16 @@
     "@value" : "Radiation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#RelativeHumidity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Humidity" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#RelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Humidity" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the humidity property relative humidity from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#SkyCover",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#SkyCover",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -718,10 +718,10 @@
     "@value" : "Sky Cover"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Snow",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Snow",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -732,16 +732,16 @@
     "@value" : "Snow"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Precipitation"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Precipitation"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#SnowDepth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Snow" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#SnowDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Snow" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the snow property snow depth from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Storm",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Storm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -752,10 +752,10 @@
     "@value" : "Storm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Precipitation"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Precipitation"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Temperature",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Temperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -766,16 +766,16 @@
     "@value" : "Temperature"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#TenthsOfCoverage",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#TenthsOfCoverage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Thousandths",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Thousandths",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Time",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Time",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future."
@@ -785,25 +785,25 @@
     "@value" : "Time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#TotalSkyCover",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#SkyCover" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#TotalSkyCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#SkyCover" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the sky cover property total sky cover from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Visibility",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Visibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the weather property visibility from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WattHourPerSquareMetre",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WattHourPerSquareMetre",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -817,88 +817,88 @@
     "@id" : "https://saref.etsi.org/core/Property"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#Wind",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Wind",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The perceptible natural movement of the air, especially in the form of a current of air blowing from a particular direction."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/weat#AtmosphericPhenomenon"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#WindDirection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Wind" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WindDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Wind" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the wind property wind direction from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#ZenithLuminance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Illuminance" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Illuminance" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the illuminance property zenith luminance from EPW."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property apparent temperature from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureHigh",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property apparent temperature high from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureHighTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHighTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property apparent temperature high time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureLow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property apparent temperature low from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureLowTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLowTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property apparent temperature low time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMax",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property apparent temperature max from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMaxTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMaxTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property apparent temperature max time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property apparent temperature min from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#apparentTemperatureMinTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMinTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property apparent temperature min time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#cloudCover",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#SkyCover" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#cloudCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#SkyCover" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the sky cover property cloud cover from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#locatedIn",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#locatedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -909,179 +909,179 @@
     "@value" : "located in"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#moonPhase",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#moonPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the weather property moon phase from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#nearestStormBearing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Storm" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#nearestStormBearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Storm" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the storm property nearest storm bearing from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#nearestStormDistance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Storm" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#nearestStormDistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Storm" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the storm property nearest storm distance from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#ozone",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#WeatherProperty" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#ozone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the weather property ozone from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#precipAccumulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipAccumulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property precipitation accumulation from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#precipIntensity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property precipitation intensity from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#precipIntensityError",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipIntensityError",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property precipitation intensity error from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#precipIntensityMax",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property precipitation intensity max from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#precipIntensityMaxTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMaxTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property precipitation intensity max time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#precipProbability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property precipitation probability from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#precipType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Precipitation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the precipitation property precipitation type from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#pressure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Pressure" ]
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Pressure" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#sunriseTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#sunriseTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property sunrise time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#sunsetTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#sunsetTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property sunset time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property temperature from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperatureHigh",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property temperature high from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperatureHighTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureHighTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property temperature high time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperatureLow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureLow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property temperature low from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperatureLowTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureLowTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property temperature low time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperatureMax",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property temperature max from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperatureMaxTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureMaxTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property temperature max time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperatureMin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Temperature" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureMin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the temperature property temperature min from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#temperatureMinTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureMinTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property temperature min time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#time",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property  time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#uvIndex",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Radiation" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#uvIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the radiation property uvIndex from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#uvIndexTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#uvIndexTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property uv index time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#windBearing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Wind" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#windBearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Wind" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the wind property wind bearing from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#windGust",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Wind" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#windGust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Wind" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the wind property wind gust from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#windGustTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Time" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#windGustTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Time" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the time property wind gust time from Dark Sky API."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/weat#windSpeed",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weat#Wind" ],
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#windSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Wind" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An individual representing the wind property wind speed from EPW."
   } ]
