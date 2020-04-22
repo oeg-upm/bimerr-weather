@@ -1,4 +1,4 @@
-<h2 id="overv" class="list">BIMERR Weather Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<html><h2 id="overv" class="list">BIMERR Weather Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -19,6 +19,12 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a>
+   </li>
+   <li>
+      <a href="#ExtremeWeatherPeriodMeasurement"
+         title="https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement">
+         <span>extreme weather period measurement</span>
+      </a>
    </li>
    <li>
       <a href="#https://saref.etsi.org/core/FeatureOfInterest" title="https://saref.etsi.org/core/FeatureOfInterest">Feature of Interest</a>
@@ -57,6 +63,10 @@ This ontology has the following classes and properties.</span>
          title="https://bimerr.iot.linkeddata.es/def/weather#Radiation">Radiation</a>
    </li>
    <li>
+      <a href="#Season"
+         title="https://bimerr.iot.linkeddata.es/def/weather#Season">Season</a>
+   </li>
+   <li>
       <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a>
    </li>
    <li>
@@ -80,7 +90,19 @@ This ontology has the following classes and properties.</span>
          title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
    </li>
    <li>
+      <a href="#TypicalWeatherPeriodMeasurement"
+         title="https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement">
+         <span>typical weather period measurement</span>
+      </a>
+   </li>
+   <li>
       <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
+   </li>
+   <li>
+      <a href="#WeatherPeriodMeasurement"
+         title="https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement">
+         <span>weather period measurement</span>
+      </a>
    </li>
    <li>
       <a href="#WeatherProperty"
@@ -144,10 +166,18 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#alt" title="http://www.w3.org/2003/01/geo/wgs84_pos#alt">altitude</a>
    </li>
    <li>
+      <a href="#firstDate"
+         title="https://bimerr.iot.linkeddata.es/def/weather#firstDate">first Date</a>
+   </li>
+   <li>
       <a href="#https://saref.etsi.org/core/hasTimeStamp" title="https://saref.etsi.org/core/hasTimeStamp">has time stamp</a>
    </li>
    <li>
       <a href="#https://saref.etsi.org/core/hasValue" title="https://saref.etsi.org/core/hasValue">has value</a>
+   </li>
+   <li>
+      <a href="#lastDate"
+         title="https://bimerr.iot.linkeddata.es/def/weather#lastDate">last Date</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">latitude</a>
@@ -202,12 +232,6 @@ This ontology has the following classes and properties.</span>
       <a href="#AtmosphericStationPressure"
          title="https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure">
          <span>atmospheric station pressure</span>
-      </a>
-   </li>
-   <li>
-      <a href="#AverageTemperatureForPeriod"
-         title="https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod">
-         <span>average temperature for period</span>
       </a>
    </li>
    <li>
@@ -325,6 +349,10 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#Fall"
+         title="https://bimerr.iot.linkeddata.es/def/weather#Fall">Fall</a>
+   </li>
+   <li>
       <a href="#GlobalHorizontalIlluminance"
          title="https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance">
          <span>global horizontal illuminance</span>
@@ -427,12 +455,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#MaxTemperatureForPeriod"
-         title="https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod">
-         <span>max temperature for period</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/metre"
          title="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">
          <span>metre</span>
@@ -466,12 +488,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre"
          title="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
          <span>millimetre</span>
-      </a>
-   </li>
-   <li>
-      <a href="#MinTemperatureForPeriod"
-         title="https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod">
-         <span>min temperature for period</span>
       </a>
    </li>
    <li>
@@ -589,6 +605,14 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#Spring"
+         title="https://bimerr.iot.linkeddata.es/def/weather#Spring">Spring</a>
+   </li>
+   <li>
+      <a href="#Summer"
+         title="https://bimerr.iot.linkeddata.es/def/weather#Summer">Summer</a>
+   </li>
+   <li>
       <a href="#temperature"
          title="https://bimerr.iot.linkeddata.es/def/weather#temperature">
          <span>temperature</span>
@@ -685,9 +709,13 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#Winter"
+         title="https://bimerr.iot.linkeddata.es/def/weather#Winter">Winter</a>
+   </li>
+   <li>
       <a href="#ZenithLuminance"
          title="https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance">
          <span>zenith luminance</span>
       </a>
    </li>
-</ul>
+</ul></html>

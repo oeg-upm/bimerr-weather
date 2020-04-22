@@ -1,4 +1,4 @@
-<h2 id="crossreference" class="list">Cross reference for BIMERR Weather Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<html><h2 id="crossreference" class="list">Cross reference for BIMERR Weather Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by BIMERR Weather Ontology.
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
@@ -19,6 +19,12 @@ This section provides details for each class and property defined by BIMERR Weat
       </li>
       <li>
          <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a>
+      </li>
+      <li>
+         <a href="#ExtremeWeatherPeriodMeasurement"
+            title="https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement">
+            <span>extreme weather period measurement</span>
+         </a>
       </li>
       <li>
          <a href="#https://saref.etsi.org/core/FeatureOfInterest" title="https://saref.etsi.org/core/FeatureOfInterest">Feature of Interest</a>
@@ -57,6 +63,10 @@ This section provides details for each class and property defined by BIMERR Weat
             title="https://bimerr.iot.linkeddata.es/def/weather#Radiation">Radiation</a>
       </li>
       <li>
+         <a href="#Season"
+            title="https://bimerr.iot.linkeddata.es/def/weather#Season">Season</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a>
       </li>
       <li>
@@ -80,7 +90,19 @@ This section provides details for each class and property defined by BIMERR Weat
             title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
       </li>
       <li>
+         <a href="#TypicalWeatherPeriodMeasurement"
+            title="https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement">
+            <span>typical weather period measurement</span>
+         </a>
+      </li>
+      <li>
          <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
+      </li>
+      <li>
+         <a href="#WeatherPeriodMeasurement"
+            title="https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement">
+            <span>weather period measurement</span>
+         </a>
       </li>
       <li>
          <a href="#WeatherProperty"
@@ -137,7 +159,9 @@ This section provides details for each class and property defined by BIMERR Weat
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Wind"
+            <a href="#Precipitation"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Precipitation">Precipitation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Wind"
                title="https://bimerr.iot.linkeddata.es/def/weather#Wind">wind</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -215,6 +239,22 @@ This section provides details for each class and property defined by BIMERR Weat
          <dt>has sub-classes</dt>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ExtremeWeatherPeriodMeasurement">
+      <h3>extreme weather period measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#WeatherPeriodMeasurement"
+               title="https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement">weather period measurement</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -354,6 +394,12 @@ This section provides details for each class and property defined by BIMERR Weat
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#WeatherPeriodMeasurement"
+               title="https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement">weather period measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
@@ -394,8 +440,8 @@ This section provides details for each class and property defined by BIMERR Weat
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#WeatherProperty"
-               title="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty">Weather Property</a>
+            <a href="#AtmosphericPhenomenon"
+               title="https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon">Atmospheric Phenomenon</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -521,6 +567,28 @@ This section provides details for each class and property defined by BIMERR Weat
                title="https://bimerr.iot.linkeddata.es/def/weather#HorizontalInfraredRadiationIntensity">horizontal infrared radiation intensity</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#uvIndex"
                title="https://bimerr.iot.linkeddata.es/def/weather#uvIndex">uv index</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Season">
+      <h3>Season<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#Season</p>
+      <dl class="description">
+         <dt>has members</dt>
+         <dd>
+            <a href="#Fall"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Fall">Fall</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Spring"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Spring">Spring</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Summer"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Summer">Summer</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Winter"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Winter">Winter</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -696,16 +764,10 @@ This section provides details for each class and property defined by BIMERR Weat
                title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax">apparent temperature max</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#apparentTemperatureMin"
                title="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin">apparent temperature min</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AverageTemperatureForPeriod"
-               title="https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod">average temperature for period</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DewPointTemperature"
                title="https://bimerr.iot.linkeddata.es/def/weather#DewPointTemperature">dew point temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DryBulbTemperature"
                title="https://bimerr.iot.linkeddata.es/def/weather#DryBulbTemperature">dry bulb temperature</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MaxTemperatureForPeriod"
-               title="https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod">max temperature for period</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MinTemperatureForPeriod"
-               title="https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod">min temperature for period</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperature"
                title="https://bimerr.iot.linkeddata.es/def/weather#temperature">temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperatureHigh"
@@ -717,6 +779,22 @@ This section provides details for each class and property defined by BIMERR Weat
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperatureMin"
                title="https://bimerr.iot.linkeddata.es/def/weather#temperatureMin">temperature min</a>
             <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TypicalWeatherPeriodMeasurement">
+      <h3>typical weather period measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#WeatherPeriodMeasurement"
+               title="https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement">weather period measurement</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -795,6 +873,29 @@ This section provides details for each class and property defined by BIMERR Weat
          </dd>
       </dl>
    </div>
+   <div class="entity" id="WeatherPeriodMeasurement">
+      <h3>weather period measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://saref.etsi.org/core/Measurement" title="https://saref.etsi.org/core/Measurement">Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ExtremeWeatherPeriodMeasurement"
+               title="https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement">extreme weather period measurement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TypicalWeatherPeriodMeasurement"
+               title="https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement">typical weather period measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="WeatherProperty">
       <h3>Weather Property<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -821,8 +922,6 @@ This section provides details for each class and property defined by BIMERR Weat
                title="https://bimerr.iot.linkeddata.es/def/weather#Humidity">Humidity</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Illuminance"
                title="https://bimerr.iot.linkeddata.es/def/weather#Illuminance">Illuminance</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Precipitation"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Precipitation">Precipitation</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Pressure"
                title="https://bimerr.iot.linkeddata.es/def/weather#Pressure">Pressure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Radiation"
@@ -1218,10 +1317,18 @@ This section provides details for each class and property defined by BIMERR Weat
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#alt" title="http://www.w3.org/2003/01/geo/wgs84_pos#alt">altitude</a>
       </li>
       <li>
+         <a href="#firstDate"
+            title="https://bimerr.iot.linkeddata.es/def/weather#firstDate">first Date</a>
+      </li>
+      <li>
          <a href="#https://saref.etsi.org/core/hasTimeStamp" title="https://saref.etsi.org/core/hasTimeStamp">has time stamp</a>
       </li>
       <li>
          <a href="#https://saref.etsi.org/core/hasValue" title="https://saref.etsi.org/core/hasValue">has value</a>
+      </li>
+      <li>
+         <a href="#lastDate"
+            title="https://bimerr.iot.linkeddata.es/def/weather#lastDate">last Date</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">latitude</a>
@@ -1240,6 +1347,25 @@ This section provides details for each class and property defined by BIMERR Weat
       <div class="comment">
          <span class="markdown">The WGS84 altitude of a SpatialThing (decimal meters 
 above the local reference ellipsoid).</span>
+      </div>
+   </div>
+   <div class="entity" id="firstDate">
+      <h3>first Date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#firstDate</p>
+      <div class="comment">
+         <span class="markdown">First date of a period</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+         </dl>
       </div>
    </div>
    <div class="entity" id="https://saref.etsi.org/core/hasTimeStamp">
@@ -1263,6 +1389,25 @@ or for series of measurements</span>
          <strong>IRI:</strong> https://saref.etsi.org/core/hasValue</p>
       <div class="comment">
          <span class="markdown">Value of a measurement</span>
+      </div>
+   </div>
+   <div class="entity" id="lastDate">
+      <h3>last Date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#lastDate</p>
+      <div class="comment">
+         <span class="markdown">Last date of a period</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+         </dl>
       </div>
    </div>
    <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
@@ -1336,12 +1481,6 @@ or for series of measurements</span>
          <a href="#AtmosphericStationPressure"
             title="https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure">
             <span>atmospheric station pressure</span>
-         </a>
-      </li>
-      <li>
-         <a href="#AverageTemperatureForPeriod"
-            title="https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod">
-            <span>average temperature for period</span>
          </a>
       </li>
       <li>
@@ -1459,6 +1598,10 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
+         <a href="#Fall"
+            title="https://bimerr.iot.linkeddata.es/def/weather#Fall">Fall</a>
+      </li>
+      <li>
          <a href="#GlobalHorizontalIlluminance"
             title="https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance">
             <span>global horizontal illuminance</span>
@@ -1561,12 +1704,6 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
-         <a href="#MaxTemperatureForPeriod"
-            title="https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod">
-            <span>max temperature for period</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/metre"
             title="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">
             <span>metre</span>
@@ -1600,12 +1737,6 @@ or for series of measurements</span>
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre"
             title="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
             <span>millimetre</span>
-         </a>
-      </li>
-      <li>
-         <a href="#MinTemperatureForPeriod"
-            title="https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod">
-            <span>min temperature for period</span>
          </a>
       </li>
       <li>
@@ -1723,6 +1854,14 @@ or for series of measurements</span>
          </a>
       </li>
       <li>
+         <a href="#Spring"
+            title="https://bimerr.iot.linkeddata.es/def/weather#Spring">Spring</a>
+      </li>
+      <li>
+         <a href="#Summer"
+            title="https://bimerr.iot.linkeddata.es/def/weather#Summer">Summer</a>
+      </li>
+      <li>
          <a href="#temperature"
             title="https://bimerr.iot.linkeddata.es/def/weather#temperature">
             <span>temperature</span>
@@ -1817,6 +1956,10 @@ or for series of measurements</span>
             title="https://bimerr.iot.linkeddata.es/def/weather#windSpeed">
             <span>wind speed</span>
          </a>
+      </li>
+      <li>
+         <a href="#Winter"
+            title="https://bimerr.iot.linkeddata.es/def/weather#Winter">Winter</a>
       </li>
       <li>
          <a href="#ZenithLuminance"
@@ -1973,25 +2116,6 @@ or for series of measurements</span>
          <dd>
             <a href="#Pressure"
                title="https://bimerr.iot.linkeddata.es/def/weather#Pressure">Pressure</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="AverageTemperatureForPeriod">
-      <h3>average temperature for period<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the average temperature for period from EPW.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Temperature"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2329,6 +2453,25 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Fall">
+      <h3>Fall<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#Fall</p>
+      <div class="comment">
+         <span class="markdown">Autumn, also known as fall in North American English, is one of the four temperate seasons. Autumn marks the transition from summer to winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when the duration of daylight becomes noticeably shorter and the temperature cools considerably.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Season"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Season">Season</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="GlobalHorizontalIlluminance">
       <h3>global horizontal illuminance<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2624,25 +2767,6 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="MaxTemperatureForPeriod">
-      <h3>max temperature for period<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the max temperature for period from EPW.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Temperature"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">
       <h3>metre<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2729,25 +2853,6 @@ or for series of measurements</span>
          <dt>belongs to</dt>
          <dd>
             <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of Measure</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="MinTemperatureForPeriod">
-      <h3>min temperature for period<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod</p>
-      <div class="comment">
-         <span class="markdown">An individual representing the min temperature for period from EPW.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Temperature"
-               title="https://bimerr.iot.linkeddata.es/def/weather#Temperature">Temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3099,6 +3204,44 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Spring">
+      <h3>Spring<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#Spring</p>
+      <div class="comment">
+         <span class="markdown">Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding summer. There are various technical definitions of spring, but local usage of the term varies according to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and vice versa. At the spring (or vernal) equinox, days and nights are approximately twelve hours long, with daytime length increasing and nighttime length decreasing as the season progresses.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Season"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Season">Season</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Summer">
+      <h3>Summer<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#Summer</p>
+      <div class="comment">
+         <span class="markdown">Summer is the hottest of the four temperate seasons, falling after spring and before autumn. At or around the summer solstice, the earliest sunrise and latest sunset occurs, the days are longest and the nights are shortest, with day length decreasing as the season progresses after the solstice. The date of the beginning of summer varies according to climate, tradition, and culture. When it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Season"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Season">Season</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="temperature">
       <h3>temperature<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3387,6 +3530,22 @@ or for series of measurements</span>
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Winter">
+      <h3>Winter<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://bimerr.iot.linkeddata.es/def/weather#Winter</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Season"
+               title="https://bimerr.iot.linkeddata.es/def/weather#Season">Season</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ZenithLuminance">
       <h3>zenith luminance<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3415,3 +3574,4 @@ or for series of measurements</span>
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
+</html>

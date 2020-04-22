@@ -79,6 +79,9 @@
 <https://bimerr.iot.linkeddata.es/def/weather#locatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between Sensor and AdministrativeArea that locates it in a City and a Country."@en .
 <https://bimerr.iot.linkeddata.es/def/weather#locatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "located in"@en .
 # 
+# https://bimerr.iot.linkeddata.es/def/weather#observedInSeason
+<https://bimerr.iot.linkeddata.es/def/weather#observedInSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # https://saref.etsi.org/core/controlsProperty
 <https://saref.etsi.org/core/controlsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core/controlsProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the property that can be controlled by a certain device"@en .
@@ -182,6 +185,18 @@
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 longitude of a SpatialThing (decimal degrees)."@en .
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#label> "longitude"@en .
 # 
+# https://bimerr.iot.linkeddata.es/def/weather#firstDate
+<https://bimerr.iot.linkeddata.es/def/weather#firstDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://bimerr.iot.linkeddata.es/def/weather#firstDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://bimerr.iot.linkeddata.es/def/weather#firstDate> <http://www.w3.org/2000/01/rdf-schema#comment> "First date of a period"@en .
+<https://bimerr.iot.linkeddata.es/def/weather#firstDate> <http://www.w3.org/2000/01/rdf-schema#label> "first Date"@en .
+# 
+# https://bimerr.iot.linkeddata.es/def/weather#lastDate
+<https://bimerr.iot.linkeddata.es/def/weather#lastDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://bimerr.iot.linkeddata.es/def/weather#lastDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://bimerr.iot.linkeddata.es/def/weather#lastDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Last date of a period"@en .
+<https://bimerr.iot.linkeddata.es/def/weather#lastDate> <http://www.w3.org/2000/01/rdf-schema#label> "last Date"@en .
+# 
 # https://saref.etsi.org/core/hasTimeStamp
 <https://saref.etsi.org/core/hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core/hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#comment> "Time stamp of the measure. Identify when the measurement applies to the property, which can be used either for single measurements\nor for series of measurements"@en .
@@ -241,6 +256,10 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/
 <https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural phenomenon involving the physical properties of matter and energy."@en .
 <https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "Atmospheric Phenomenon"@en .
 # 
+# https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement
+<https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement> .
+# 
 # https://bimerr.iot.linkeddata.es/def/weather#Ground
 <https://bimerr.iot.linkeddata.es/def/weather#Ground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://bimerr.iot.linkeddata.es/def/weather#Ground> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> .
@@ -261,7 +280,7 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#Precipitation
 <https://bimerr.iot.linkeddata.es/def/weather#Precipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://bimerr.iot.linkeddata.es/def/weather#Precipitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> .
+<https://bimerr.iot.linkeddata.es/def/weather#Precipitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon> .
 <https://bimerr.iot.linkeddata.es/def/weather#Precipitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any product of the condensation of atmospheric water vapour that falls under gravity from clouds. The main forms of precipitation include drizzle, rain, sleet, snow, ice pellets, graupel and hail." .
 <https://bimerr.iot.linkeddata.es/def/weather#Precipitation> <http://www.w3.org/2000/01/rdf-schema#label> "Precipitation"@en .
 # 
@@ -276,6 +295,10 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/
 <https://bimerr.iot.linkeddata.es/def/weather#Radiation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> .
 <https://bimerr.iot.linkeddata.es/def/weather#Radiation> <http://www.w3.org/2000/01/rdf-schema#comment> "The emission or transmission of energy in the form of waves or particles through space or through a material medium."@en .
 <https://bimerr.iot.linkeddata.es/def/weather#Radiation> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation"@en .
+# 
+# https://bimerr.iot.linkeddata.es/def/weather#Season
+<https://bimerr.iot.linkeddata.es/def/weather#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bimerr.iot.linkeddata.es/def/weather#Season> <http://www.w3.org/2000/01/rdf-schema#label> "Season"@en .
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#SkyCover
 <https://bimerr.iot.linkeddata.es/def/weather#SkyCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -301,6 +324,22 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/
 <https://bimerr.iot.linkeddata.es/def/weather#Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density."@en .
 <https://bimerr.iot.linkeddata.es/def/weather#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
 # 
+# https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement
+<https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement> .
+# 
+# https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement
+<https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Measurement> .
+<https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://bimerr.iot.linkeddata.es/def/weather#firstDate> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://bimerr.iot.linkeddata.es/def/weather#lastDate> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
 # https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty
 <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
@@ -314,32 +353,32 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/
 # 
 # https://saref.etsi.org/core/Device
 <https://saref.etsi.org/core/Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
-_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
-<https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://bimerr.iot.linkeddata.es/def/weather#locatedIn> .
-_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/saref4city#AdministrativeArea> .
+<https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://bimerr.iot.linkeddata.es/def/weather#locatedIn> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/saref4city#AdministrativeArea> .
 <https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function."@en .
 <https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
 <https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
 # 
 # https://saref.etsi.org/core/FeatureOfInterest
 <https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasMeasurement> .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Measurement> .
-<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasProperty> .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Property> .
 <https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasProperty> .
-_:genid8 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasMeasurement> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Measurement> .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasProperty> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Property> .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasProperty> .
+_:genid10 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "A feature of interest represents any real world entity from which a property is measured. It is linked to the different properties it has and to its measurements."@en .
 <https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
 <https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of Interest"@en .
@@ -347,48 +386,52 @@ _:genid8 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/
 # 
 # https://saref.etsi.org/core/Measurement
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
-_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
-<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasurementOf> .
-_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/FeatureOfInterest> .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/measurementMadeBy> .
-_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Device> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://bimerr.iot.linkeddata.es/def/weather#observedInSeason> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://bimerr.iot.linkeddata.es/def/weather#Season> .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToProprety> .
-_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Property> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasTimeStamp> .
-_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasurementOf> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/measurementMadeBy> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Device> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToProprety> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Property> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasTimeStamp> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "The measured value made over a property. It is also linked to the unit of measure in which the value is expressed and to the timestamp of the measurement."@en .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
 # 
 # https://saref.etsi.org/core/Property
 <https://saref.etsi.org/core/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isControlledByDevice> .
-_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Device> .
-<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredByDevice> .
-_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Device> .
-<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isPropertyOf> .
-_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/FeatureOfInterest> .
 <https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToMeasurement> .
-_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Measurement> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isControlledByDevice> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Device> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredByDevice> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Device> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isPropertyOf> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToMeasurement> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core/Measurement> .
 <https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything that can be sensed, measured or controlled in households, common public buildings or offices. A list of properties that are relevant for the purpose of SAREF is proposed, but this list can be extended."@en .
 <https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
 <https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
@@ -531,11 +574,6 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Pressure> .
 <https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the pressure property atmospheric station pressure." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod
-<https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
-<https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the average temperature for period from EPW."@en .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight
 <https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty> .
@@ -591,6 +629,12 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialHorizontalRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Radiation> .
 <https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialHorizontalRadiation> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the radiation property extrzaterrestial horizontal radiation from EPW." .
 # 
+# https://bimerr.iot.linkeddata.es/def/weather#Fall
+<https://bimerr.iot.linkeddata.es/def/weather#Fall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://bimerr.iot.linkeddata.es/def/weather#Fall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Season> .
+<https://bimerr.iot.linkeddata.es/def/weather#Fall> <http://www.w3.org/2000/01/rdf-schema#comment> "Autumn, also known as fall in North American English, is one of the four temperate seasons. Autumn marks the transition from summer to winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when the duration of daylight becomes noticeably shorter and the temperature cools considerably."@en .
+<https://bimerr.iot.linkeddata.es/def/weather#Fall> <http://www.w3.org/2000/01/rdf-schema#label> "Fall"@en .
+# 
 # https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance
 <https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Illuminance> .
@@ -645,16 +689,6 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Precipitation> .
 <https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the precipitation property liquid precipitation quantity from EPW." .
 # 
-# https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod
-<https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
-<https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the max temperature for period from EPW."@en .
-# 
-# https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod
-<https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Temperature> .
-<https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the min temperature for period from EPW."@en .
-# 
 # https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover
 <https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#SkyCover> .
@@ -684,6 +718,18 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#SnowDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Snow> .
 <https://bimerr.iot.linkeddata.es/def/weather#SnowDepth> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the snow property snow depth from EPW." .
 # 
+# https://bimerr.iot.linkeddata.es/def/weather#Spring
+<https://bimerr.iot.linkeddata.es/def/weather#Spring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://bimerr.iot.linkeddata.es/def/weather#Spring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Season> .
+<https://bimerr.iot.linkeddata.es/def/weather#Spring> <http://www.w3.org/2000/01/rdf-schema#comment> "Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding summer. There are various technical definitions of spring, but local usage of the term varies according to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and vice versa. At the spring (or vernal) equinox, days and nights are approximately twelve hours long, with daytime length increasing and nighttime length decreasing as the season progresses."@en .
+<https://bimerr.iot.linkeddata.es/def/weather#Spring> <http://www.w3.org/2000/01/rdf-schema#label> "Spring"@en .
+# 
+# https://bimerr.iot.linkeddata.es/def/weather#Summer
+<https://bimerr.iot.linkeddata.es/def/weather#Summer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://bimerr.iot.linkeddata.es/def/weather#Summer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Season> .
+<https://bimerr.iot.linkeddata.es/def/weather#Summer> <http://www.w3.org/2000/01/rdf-schema#comment> "Summer is the hottest of the four temperate seasons, falling after spring and before autumn. At or around the summer solstice, the earliest sunrise and latest sunset occurs, the days are longest and the nights are shortest, with day length decreasing as the season progresses after the solstice. The date of the beginning of summer varies according to climate, tradition, and culture. When it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa."@en .
+<https://bimerr.iot.linkeddata.es/def/weather#Summer> <http://www.w3.org/2000/01/rdf-schema#label> "Summer"@en .
+# 
 # https://bimerr.iot.linkeddata.es/def/weather#TenthsOfCoverage
 <https://bimerr.iot.linkeddata.es/def/weather#TenthsOfCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#TenthsOfCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#UnitOfMeasure> .
@@ -710,6 +756,12 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#WindDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://bimerr.iot.linkeddata.es/def/weather#WindDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Wind> .
 <https://bimerr.iot.linkeddata.es/def/weather#WindDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the wind property wind direction from EPW." .
+# 
+# https://bimerr.iot.linkeddata.es/def/weather#Winter
+<https://bimerr.iot.linkeddata.es/def/weather#Winter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://bimerr.iot.linkeddata.es/def/weather#Winter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Season> .
+<https://bimerr.iot.linkeddata.es/def/weather#Winter> <http://www.w3.org/2000/01/rdf-schema#label> "Winter"@en .
+<https://bimerr.iot.linkeddata.es/def/weather#Winter> <http://www.w3.org/2000/01/rdf-schema#label> "Winter is the coldest season of the year in polar and temperate zones (winter does not occur in most of the tropical zone). It occurs after autumn and before spring in each year. Winter is caused by the axis of the Earth in that hemisphere being oriented away from the Sun. Different cultures define different dates as the start of winter, and some use a definition based on weather. When it is winter in the Northern Hemisphere, it is summer in the Southern Hemisphere, and vice versa. In many regions, winter is associated with snow and freezing temperatures. The moment of winter solstice is when the Sun's elevation with respect to the North or South Pole is at its most negative value (that is, the Sun is at its farthest below the horizon as measured from the pole). The day on which this occurs has the shortest day and the longest night, with day length increasing and night length decreasing as the season progresses after the solstice. The earliest sunset and latest sunrise dates outside the polar regions differ from the date of the winter solstice, however, and these depend on latitude, due to the variation in the solar day throughout the year caused by the Earth's elliptical orbit (see earliest and latest sunrise and sunset)."@en .
 # 
 # https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance
 <https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -845,4 +897,4 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org
 <https://bimerr.iot.linkeddata.es/def/weather#windSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/weather#Wind> .
 <https://bimerr.iot.linkeddata.es/def/weather#windSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the wind property wind speed from EPW." .
 # 
-# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
