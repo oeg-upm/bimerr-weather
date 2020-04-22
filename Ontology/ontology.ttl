@@ -108,6 +108,10 @@ weat:locatedIn rdf:type owl:ObjectProperty ;
                rdfs:label "located in"@en .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weather#observedInSeason
+weat:observedInSeason rdf:type owl:ObjectProperty .
+
+
 ###  https://saref.etsi.org/core/controlsProperty
 saref:controlsProperty rdf:type owl:ObjectProperty ;
                        rdfs:comment "A relationship specifying the property that can be controlled by a certain device"@en ;
@@ -223,6 +227,20 @@ wgs84_pos:long rdf:type owl:DatatypeProperty ;
                rdfs:label "longitude"@en .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weather#firstDate
+weat:firstDate rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:comment "First date of a period"@en ;
+               rdfs:label "first Date"@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#lastDate
+weat:lastDate rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:comment "Last date of a period"@en ;
+              rdfs:label "last Date"@en .
+
+
 ###  https://saref.etsi.org/core/hasTimeStamp
 saref:hasTimeStamp rdf:type owl:DatatypeProperty ;
                    rdfs:comment """Time stamp of the measure. Identify when the measurement applies to the property, which can be used either for single measurements
@@ -289,6 +307,11 @@ weat:AtmosphericPhenomenon rdf:type owl:Class ;
                            rdfs:label "Atmospheric Phenomenon"@en .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement
+weat:ExtremeWeatherPeriodMeasurement rdf:type owl:Class ;
+                                     rdfs:subClassOf weat:WeatherPeriodMeasurement .
+
+
 ###  https://bimerr.iot.linkeddata.es/def/weather#Ground
 weat:Ground rdf:type owl:Class ;
             rdfs:subClassOf weat:WeatherProperty ;
@@ -312,7 +335,7 @@ weat:Illuminance rdf:type owl:Class ;
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#Precipitation
 weat:Precipitation rdf:type owl:Class ;
-                   rdfs:subClassOf weat:WeatherProperty ;
+                   rdfs:subClassOf weat:AtmosphericPhenomenon ;
                    rdfs:comment "Any product of the condensation of atmospheric water vapour that falls under gravity from clouds. The main forms of precipitation include drizzle, rain, sleet, snow, ice pellets, graupel and hail." ;
                    rdfs:label "Precipitation"@en .
 
@@ -329,6 +352,11 @@ weat:Radiation rdf:type owl:Class ;
                rdfs:subClassOf weat:WeatherProperty ;
                rdfs:comment "The emission or transmission of energy in the form of waves or particles through space or through a material medium."@en ;
                rdfs:label "Radiation"@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#Season
+weat:Season rdf:type owl:Class ;
+            rdfs:label "Season"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#SkyCover
@@ -357,6 +385,24 @@ weat:Temperature rdf:type owl:Class ;
                  rdfs:subClassOf weat:WeatherProperty ;
                  rdfs:comment "The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density."@en ;
                  rdfs:label "Temperature"@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement
+weat:TypicalWeatherPeriodMeasurement rdf:type owl:Class ;
+                                     rdfs:subClassOf weat:WeatherPeriodMeasurement .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement
+weat:WeatherPeriodMeasurement rdf:type owl:Class ;
+                              rdfs:subClassOf saref:Measurement ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty weat:firstDate ;
+                                                owl:someValuesFrom xsd:dateTime
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty weat:lastDate ;
+                                                owl:someValuesFrom xsd:dateTime
+                                              ] .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty
@@ -410,6 +456,10 @@ saref:FeatureOfInterest rdf:type owl:Class ;
 ###  https://saref.etsi.org/core/Measurement
 saref:Measurement rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty weat:observedInSeason ;
+                                    owl:someValuesFrom weat:Season
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
                                     owl:onProperty saref:isMeasuredIn ;
                                     owl:someValuesFrom <https://w3id.org/saref#UnitOfMeasure>
                                   ] ,
@@ -619,12 +669,6 @@ weat:AtmosphericStationPressure rdf:type owl:NamedIndividual ,
                                 rdfs:comment "An individual representing the pressure property atmospheric station pressure." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod
-weat:AverageTemperatureForPeriod rdf:type owl:NamedIndividual ,
-                                          weat:Temperature ;
-                                 rdfs:comment "An individual representing the average temperature for period from EPW."@en .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight
 weat:CeillingHeight rdf:type owl:NamedIndividual ,
                              weat:WeatherProperty ;
@@ -689,6 +733,13 @@ weat:ExtraterrestialDirectNormalRadiation rdf:type owl:NamedIndividual ,
 weat:ExtraterrestialHorizontalRadiation rdf:type owl:NamedIndividual ,
                                                  weat:Radiation ;
                                         rdfs:comment "An individual representing the radiation property extrzaterrestial horizontal radiation from EPW." .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#Fall
+weat:Fall rdf:type owl:NamedIndividual ,
+                   weat:Season ;
+          rdfs:comment "Autumn, also known as fall in North American English, is one of the four temperate seasons. Autumn marks the transition from summer to winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when the duration of daylight becomes noticeably shorter and the temperature cools considerably."@en ;
+          rdfs:label "Fall"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance
@@ -756,18 +807,6 @@ weat:LiquidPrecipitationQuantity rdf:type owl:NamedIndividual ,
                                  rdfs:comment "An individual representing the precipitation property liquid precipitation quantity from EPW." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod
-weat:MaxTemperatureForPeriod rdf:type owl:NamedIndividual ,
-                                      weat:Temperature ;
-                             rdfs:comment "An individual representing the max temperature for period from EPW."@en .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod
-weat:MinTemperatureForPeriod rdf:type owl:NamedIndividual ,
-                                      weat:Temperature ;
-                             rdfs:comment "An individual representing the min temperature for period from EPW."@en .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover
 weat:OpaqueSkycover rdf:type owl:NamedIndividual ,
                              weat:SkyCover ;
@@ -803,6 +842,20 @@ weat:SnowDepth rdf:type owl:NamedIndividual ,
                rdfs:comment "An individual representing the snow property snow depth from EPW." .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weather#Spring
+weat:Spring rdf:type owl:NamedIndividual ,
+                     weat:Season ;
+            rdfs:comment "Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding summer. There are various technical definitions of spring, but local usage of the term varies according to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and vice versa. At the spring (or vernal) equinox, days and nights are approximately twelve hours long, with daytime length increasing and nighttime length decreasing as the season progresses."@en ;
+            rdfs:label "Spring"@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#Summer
+weat:Summer rdf:type owl:NamedIndividual ,
+                     weat:Season ;
+            rdfs:comment "Summer is the hottest of the four temperate seasons, falling after spring and before autumn. At or around the summer solstice, the earliest sunrise and latest sunset occurs, the days are longest and the nights are shortest, with day length decreasing as the season progresses after the solstice. The date of the beginning of summer varies according to climate, tradition, and culture. When it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa."@en ;
+            rdfs:label "Summer"@en .
+
+
 ###  https://bimerr.iot.linkeddata.es/def/weather#TenthsOfCoverage
 weat:TenthsOfCoverage rdf:type owl:NamedIndividual ,
                                <https://w3id.org/saref#UnitOfMeasure> .
@@ -834,6 +887,13 @@ weat:WattHourPerSquareMetre rdf:type owl:NamedIndividual ,
 weat:WindDirection rdf:type owl:NamedIndividual ,
                             weat:Wind ;
                    rdfs:comment "An individual representing the wind property wind direction from EPW." .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#Winter
+weat:Winter rdf:type owl:NamedIndividual ,
+                     weat:Season ;
+            rdfs:label "Winter"@en ,
+                       "Winter is the coldest season of the year in polar and temperate zones (winter does not occur in most of the tropical zone). It occurs after autumn and before spring in each year. Winter is caused by the axis of the Earth in that hemisphere being oriented away from the Sun. Different cultures define different dates as the start of winter, and some use a definition based on weather. When it is winter in the Northern Hemisphere, it is summer in the Southern Hemisphere, and vice versa. In many regions, winter is associated with snow and freezing temperatures. The moment of winter solstice is when the Sun's elevation with respect to the North or South Pole is at its most negative value (that is, the Sun is at its farthest below the horizon as measured from the pole). The day on which this occurs has the shortest day and the longest night, with day length increasing and night length decreasing as the season progresses after the solstice. The earliest sunset and latest sunrise dates outside the polar regions differ from the date of the winter solstice, however, and these depend on latitude, due to the variation in the solar day throughout the year caused by the Earth's elliptical orbit (see earliest and latest sunrise and sunset)."@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance
