@@ -23,7 +23,7 @@
                                                                   "Serge Chavez-Feria https://github.com/Serge3006" ;
                                                 terms:creator "Salvador González-Gerpe https://www.linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe" ;
                                                 terms:license <http://creativecommons.org/licenses/by/4.0/> ;
-                                                terms:publisher <http://www.oeg-upm.net/> ;
+                                                terms:publisher <https://oeg.fi.upm.es/> ;
                                                 vann:preferredNamespacePrefix "weat" ;
                                                 vann:preferredNamespaceUri "https://bimerr.iot.linkeddata.es/def/weather" .
 
@@ -102,6 +102,18 @@ wgs84_pos:location rdf:type owl:ObjectProperty ;
                    rdfs:label "location"@en .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weather#isDefinedBy
+weat:isDefinedBy rdf:type owl:ObjectProperty ;
+                 rdfs:comment "The file of the datasource is defined by measurements."@en ;
+                 rdfs:label "is defined by"@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf
+weat:isDefinitionOf rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Any measurement made is definition of a datasource file."@en ;
+                    rdfs:label "is definition of"@en .
+
+
 ###  https://bimerr.iot.linkeddata.es/def/weather#locatedIn
 weat:locatedIn rdf:type owl:ObjectProperty ;
                rdfs:comment "Relation between Sensor and AdministrativeArea that locates it in a City and a Country."@en ;
@@ -109,7 +121,9 @@ weat:locatedIn rdf:type owl:ObjectProperty ;
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#observedInSeason
-weat:observedInSeason rdf:type owl:ObjectProperty .
+weat:observedInSeason rdf:type owl:ObjectProperty ;
+                      rdfs:comment "Weather period measurement observed in a specific season."@en ;
+                      rdfs:label "observed in season"@en .
 
 
 ###  https://saref.etsi.org/core/controlsProperty
@@ -307,9 +321,28 @@ weat:AtmosphericPhenomenon rdf:type owl:Class ;
                            rdfs:label "Atmospheric Phenomenon"@en .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weather#DataSourceFiles
+weat:DataSourceFiles rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty weat:isDefinedBy ;
+                                       owl:someValuesFrom saref:Measurement
+                                     ] ;
+                     rdfs:comment "Contains the type of format for the files analyzed."@en ;
+                     rdfs:label "DataSourceFiles"@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#EPWFile
+weat:EPWFile rdf:type owl:Class ;
+             rdfs:subClassOf weat:DataSourceFiles ;
+             rdfs:comment "Indicates if the file that have been analyzed is in format EPW from the Energy Plus Weather or the Climate OneBuilding.Weather services."@en ;
+             rdfs:label "EPWFile"@en .
+
+
 ###  https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement
 weat:ExtremeWeatherPeriodMeasurement rdf:type owl:Class ;
-                                     rdfs:subClassOf weat:WeatherPeriodMeasurement .
+                                     rdfs:subClassOf weat:WeatherPeriodMeasurement ;
+                                     rdfs:comment "Indicates if the type of weather for the period is Extreme, Max for Summer season and Min for Winter season."@en ;
+                                     rdfs:label "ExtremeWeatherPeriodMeasurement"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#Ground
@@ -331,6 +364,13 @@ weat:Illuminance rdf:type owl:Class ;
                  rdfs:subClassOf weat:WeatherProperty ;
                  rdfs:comment "The total luminous flux incident on a surface, per unit area. It is a measure of how much the incident light illuminates the surface, wavelength-weighted by the luminosity function to correlate with human brightness perception." ;
                  rdfs:label "Illuminance"@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#JSONWeatherFile
+weat:JSONWeatherFile rdf:type owl:Class ;
+                     rdfs:subClassOf weat:DataSourceFiles ;
+                     rdfs:comment "Indicates if the file that have been analyzed is in format JSON from the OpenWeatherMap service."@en ;
+                     rdfs:label "JSONWeatherFile"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#Precipitation
@@ -373,13 +413,6 @@ weat:Snow rdf:type owl:Class ;
           rdfs:label "Snow"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#Storm
-weat:Storm rdf:type owl:Class ;
-           rdfs:subClassOf weat:Precipitation ;
-           rdfs:comment "Any disturbed state of a body especially affecting its surface, and strongly implying a wind force. It may be marked by significant disruptions and lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc."@en ;
-           rdfs:label "Storm"@en .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#Temperature
 weat:Temperature rdf:type owl:Class ;
                  rdfs:subClassOf weat:WeatherProperty ;
@@ -389,7 +422,9 @@ weat:Temperature rdf:type owl:Class ;
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement
 weat:TypicalWeatherPeriodMeasurement rdf:type owl:Class ;
-                                     rdfs:subClassOf weat:WeatherPeriodMeasurement .
+                                     rdfs:subClassOf weat:WeatherPeriodMeasurement ;
+                                     rdfs:comment "Indicates if the type of weather for the period is Typical. Average temperature period for season."@en ;
+                                     rdfs:label "TypicalWeatherPeriodMeasurement"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement
@@ -402,7 +437,9 @@ weat:WeatherPeriodMeasurement rdf:type owl:Class ;
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty weat:lastDate ;
                                                 owl:someValuesFrom xsd:dateTime
-                                              ] .
+                                              ] ;
+                              rdfs:comment "Type of measurement for a period."@en ;
+                              rdfs:label "WeatherPeriodMeasurement"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty
@@ -456,6 +493,10 @@ saref:FeatureOfInterest rdf:type owl:Class ;
 ###  https://saref.etsi.org/core/Measurement
 saref:Measurement rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty weat:isDefinitionOf ;
+                                    owl:someValuesFrom weat:DataSourceFiles
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
                                     owl:onProperty weat:observedInSeason ;
                                     owl:someValuesFrom weat:Season
                                   ] ,
@@ -576,6 +617,11 @@ s4city:Country rdf:type owl:Class ;
                                                                                       <https://w3id.org/saref#UnitOfMeasure> .
 
 
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal> rdf:type owl:NamedIndividual ,
+                                                                                 <https://w3id.org/saref#UnitOfMeasure> .
+
+
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/hour
 <http://www.ontology-of-units-of-measure.org/resource/om-2/hour> rdf:type owl:NamedIndividual ,
                                                                           <https://w3id.org/saref#UnitOfMeasure> .
@@ -673,12 +719,6 @@ weat:AtmosphericStationPressure rdf:type owl:NamedIndividual ,
 weat:CeillingHeight rdf:type owl:NamedIndividual ,
                              weat:WeatherProperty ;
                     rdfs:comment "An individual representing the weather property ceilling height." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#DataSourceAndUncertaintyFlags
-weat:DataSourceAndUncertaintyFlags rdf:type owl:NamedIndividual ,
-                                            weat:WeatherProperty ;
-                                   rdfs:comment "An individual representing the weather property data source and uncertainty flags." .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#DaysSinceLastSnowfall
@@ -819,17 +859,6 @@ weat:PrecipitableWater rdf:type owl:NamedIndividual ,
                        rdfs:comment "An individual representing the precipitation property precipitable water from EPW." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherCodes
-weat:PresentWeatherCodes rdf:type owl:NamedIndividual ,
-                                  weat:WeatherProperty ;
-                         rdfs:comment "An individual representing the weather property present weather codes from EPW." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherObservation
-weat:PresentWeatherObservation rdf:type owl:NamedIndividual ,
-                                        weat:WeatherProperty .
-
-
 ###  https://bimerr.iot.linkeddata.es/def/weather#RelativeHumidity
 weat:RelativeHumidity rdf:type owl:NamedIndividual ,
                                weat:Humidity ;
@@ -889,11 +918,17 @@ weat:WindDirection rdf:type owl:NamedIndividual ,
                    rdfs:comment "An individual representing the wind property wind direction from EPW." .
 
 
+###  https://bimerr.iot.linkeddata.es/def/weather#WindSpeed
+weat:WindSpeed rdf:type owl:NamedIndividual ,
+                        weat:Wind ;
+               rdfs:comment "An individual representing the wind property wind speed from EPW." .
+
+
 ###  https://bimerr.iot.linkeddata.es/def/weather#Winter
 weat:Winter rdf:type owl:NamedIndividual ,
                      weat:Season ;
-            rdfs:label "Winter"@en ,
-                       "Winter is the coldest season of the year in polar and temperate zones (winter does not occur in most of the tropical zone). It occurs after autumn and before spring in each year. Winter is caused by the axis of the Earth in that hemisphere being oriented away from the Sun. Different cultures define different dates as the start of winter, and some use a definition based on weather. When it is winter in the Northern Hemisphere, it is summer in the Southern Hemisphere, and vice versa. In many regions, winter is associated with snow and freezing temperatures. The moment of winter solstice is when the Sun's elevation with respect to the North or South Pole is at its most negative value (that is, the Sun is at its farthest below the horizon as measured from the pole). The day on which this occurs has the shortest day and the longest night, with day length increasing and night length decreasing as the season progresses after the solstice. The earliest sunset and latest sunrise dates outside the polar regions differ from the date of the winter solstice, however, and these depend on latitude, due to the variation in the solar day throughout the year caused by the Earth's elliptical orbit (see earliest and latest sunrise and sunset)."@en .
+            rdfs:comment "Winter is the coldest season of the year in polar and temperate zones (winter does not occur in most of the tropical zone). It occurs after autumn and before spring in each year. Winter is caused by the axis of the Earth in that hemisphere being oriented away from the Sun. Different cultures define different dates as the start of winter, and some use a definition based on weather. When it is winter in the Northern Hemisphere, it is summer in the Southern Hemisphere, and vice versa. In many regions, winter is associated with snow and freezing temperatures. The moment of winter solstice is when the Sun's elevation with respect to the North or South Pole is at its most negative value (that is, the Sun is at its farthest below the horizon as measured from the pole). The day on which this occurs has the shortest day and the longest night, with day length increasing and night length decreasing as the season progresses after the solstice. The earliest sunset and latest sunrise dates outside the polar regions differ from the date of the winter solstice, however, and these depend on latitude, due to the variation in the solar day throughout the year caused by the Earth's elliptical orbit (see earliest and latest sunrise and sunset)."@en ;
+            rdfs:label "Winter"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance
@@ -902,159 +937,100 @@ weat:ZenithLuminance rdf:type owl:NamedIndividual ,
                      rdfs:comment "An individual representing the illuminance property zenith luminance from EPW." .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperature
-weat:apparentTemperature rdf:type owl:NamedIndividual ,
-                                  weat:Temperature ;
-                         rdfs:comment "An individual representing the temperature property apparent temperature from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#clouds
+weat:clouds rdf:type owl:NamedIndividual ,
+                     weat:SkyCover ;
+            rdfs:comment "An individual representing the sky cover property clouds from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh
-weat:apparentTemperatureHigh rdf:type owl:NamedIndividual ,
-                                      weat:Temperature ;
-                             rdfs:comment "An individual representing the temperature property apparent temperature high from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#feels_like
+weat:feels_like rdf:type owl:NamedIndividual ,
+                         weat:Temperature ;
+                rdfs:comment "An individual representing the feels_like from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow
-weat:apparentTemperatureLow rdf:type owl:NamedIndividual ,
-                                     weat:Temperature ;
-                            rdfs:comment "An individual representing the temperature property apparent temperature low from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#feels_like_day
+weat:feels_like_day rdf:type owl:NamedIndividual ,
+                             weat:Temperature ;
+                    rdfs:comment "An individual representing the feels_like_day from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax
-weat:apparentTemperatureMax rdf:type owl:NamedIndividual ,
-                                     weat:Temperature ;
-                            rdfs:comment "An individual representing the temperature property apparent temperature max from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#feels_like_night
+weat:feels_like_night rdf:type owl:NamedIndividual ,
+                               weat:Temperature ;
+                      rdfs:comment "An individual representing the feels_like_night from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin
-weat:apparentTemperatureMin rdf:type owl:NamedIndividual ,
-                                     weat:Temperature ;
-                            rdfs:comment "An individual representing the temperature property apparent temperature min from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#cloudCover
-weat:cloudCover rdf:type owl:NamedIndividual ,
-                         weat:SkyCover ;
-                rdfs:comment "An individual representing the sky cover property cloud cover from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#moonPhase
-weat:moonPhase rdf:type owl:NamedIndividual ,
-                        weat:WeatherProperty ;
-               rdfs:comment "An individual representing the weather property moon phase from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#nearestStormBearing
-weat:nearestStormBearing rdf:type owl:NamedIndividual ,
-                                  weat:Storm ;
-                         rdfs:comment "An individual representing the storm property nearest storm bearing from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#nearestStormDistance
-weat:nearestStormDistance rdf:type owl:NamedIndividual ,
-                                   weat:Storm ;
-                          rdfs:comment "An individual representing the storm property nearest storm distance from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#ozone
-weat:ozone rdf:type owl:NamedIndividual ,
-                    weat:WeatherProperty ;
-           rdfs:comment "An individual representing the weather property ozone from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#precipAccumulation
-weat:precipAccumulation rdf:type owl:NamedIndividual ,
-                                 weat:Precipitation ;
-                        rdfs:comment "An individual representing the precipitation property precipitation accumulation from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#precipIntensity
-weat:precipIntensity rdf:type owl:NamedIndividual ,
-                              weat:Precipitation ;
-                     rdfs:comment "An individual representing the precipitation property precipitation intensity from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#precipIntensityError
-weat:precipIntensityError rdf:type owl:NamedIndividual ,
-                                   weat:Precipitation ;
-                          rdfs:comment "An individual representing the precipitation property precipitation intensity error from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax
-weat:precipIntensityMax rdf:type owl:NamedIndividual ,
-                                 weat:Precipitation ;
-                        rdfs:comment "An individual representing the precipitation property precipitation intensity max from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#precipProbability
-weat:precipProbability rdf:type owl:NamedIndividual ,
-                                weat:Precipitation ;
-                       rdfs:comment "An individual representing the precipitation property precipitation probability from Dark Sky API." .
-
-
-###  https://bimerr.iot.linkeddata.es/def/weather#precipType
-weat:precipType rdf:type owl:NamedIndividual ,
-                         weat:Precipitation ;
-                rdfs:comment "An individual representing the precipitation property precipitation type from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#precipitation
+weat:precipitation rdf:type owl:NamedIndividual ,
+                            weat:Precipitation ;
+                   rdfs:comment "An individual representing the precipitation from OpenWeatherMap"@en .
 
 
 ###  https://bimerr.iot.linkeddata.es/def/weather#pressure
 weat:pressure rdf:type owl:NamedIndividual ,
-                       weat:Pressure .
+                       weat:Pressure ;
+              rdfs:comment "An individual representing the pressure from OpenWeatherMap."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#temperature
-weat:temperature rdf:type owl:NamedIndividual ,
-                          weat:Temperature ;
-                 rdfs:comment "An individual representing the temperature property temperature from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#rain
+weat:rain rdf:type owl:NamedIndividual ,
+                   weat:Precipitation ;
+          rdfs:comment "An individual representing the rain from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh
-weat:temperatureHigh rdf:type owl:NamedIndividual ,
-                              weat:Temperature ;
-                     rdfs:comment "An individual representing the temperature property temperature high from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#snow
+weat:snow rdf:type owl:NamedIndividual ,
+                   weat:Snow ;
+          rdfs:comment "An individual representing the snow from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#temperatureLow
-weat:temperatureLow rdf:type owl:NamedIndividual ,
-                             weat:Temperature ;
-                    rdfs:comment "An individual representing the temperature property temperature low from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#temp
+weat:temp rdf:type owl:NamedIndividual ,
+                   weat:Temperature ;
+          rdfs:comment "An individual representing the temp from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#temperatureMax
-weat:temperatureMax rdf:type owl:NamedIndividual ,
-                             weat:Temperature ;
-                    rdfs:comment "An individual representing the temperature property temperature max from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#temp_day
+weat:temp_day rdf:type owl:NamedIndividual ,
+                       weat:Temperature ;
+              rdfs:comment "An individual representing the temp_day from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#temperatureMin
-weat:temperatureMin rdf:type owl:NamedIndividual ,
-                             weat:Temperature ;
-                    rdfs:comment "An individual representing the temperature property temperature min from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#temp_max
+weat:temp_max rdf:type owl:NamedIndividual ,
+                       weat:Temperature ;
+              rdfs:comment "An individual representing the temp_max from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#uvIndex
-weat:uvIndex rdf:type owl:NamedIndividual ,
-                      weat:Radiation ;
-             rdfs:comment "An individual representing the radiation property uvIndex from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#temp_min
+weat:temp_min rdf:type owl:NamedIndividual ,
+                       weat:Temperature ;
+              rdfs:comment "An individual representing the temperature property temp_min from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#windBearing
-weat:windBearing rdf:type owl:NamedIndividual ,
-                          weat:Wind ;
-                 rdfs:comment "An individual representing the wind property wind bearing from Dark Sky API." .
+###  https://bimerr.iot.linkeddata.es/def/weather#temp_night
+weat:temp_night rdf:type owl:NamedIndividual ,
+                         weat:Temperature ;
+                rdfs:comment "An individual representing the temperature property temp_night from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#windGust
-weat:windGust rdf:type owl:NamedIndividual ,
+###  https://bimerr.iot.linkeddata.es/def/weather#uvi
+weat:uvi rdf:type owl:NamedIndividual ,
+                  weat:Radiation ;
+         rdfs:comment "An individual representing the radiation property uvi from OpenWeatherMap"@en .
+
+
+###  https://bimerr.iot.linkeddata.es/def/weather#wind_deg
+weat:wind_deg rdf:type owl:NamedIndividual ,
                        weat:Wind ;
-              rdfs:comment "An individual representing the wind property wind gust from Dark Sky API." .
+              rdfs:comment "An individual representing the wind property wind_deg from OpenWeatherMap"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/weather#windSpeed
-weat:windSpeed rdf:type owl:NamedIndividual ,
+###  https://bimerr.iot.linkeddata.es/def/weather#wind_gust
+weat:wind_gust rdf:type owl:NamedIndividual ,
                         weat:Wind ;
-               rdfs:comment "An individual representing the wind property wind speed from EPW." .
+               rdfs:comment "An individual representing the wind property wind_gust from OpenWeatherMap"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

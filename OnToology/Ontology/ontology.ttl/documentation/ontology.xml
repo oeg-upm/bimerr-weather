@@ -19,7 +19,7 @@
         <terms:contributor>Serge Chavez-Feria https://github.com/Serge3006</terms:contributor>
         <terms:creator>Salvador González-Gerpe https://www.linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe</terms:creator>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <terms:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <terms:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <vann:preferredNamespacePrefix>weat</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://bimerr.iot.linkeddata.es/def/weather</vann:preferredNamespaceUri>
     </owl:Ontology>
@@ -160,12 +160,42 @@
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#isDefinedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weather#isDefinedBy">
+        <rdfs:comment xml:lang="en">The file of the datasource is defined by measurements.</rdfs:comment>
+        <rdfs:label xml:lang="en">is defined by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf">
+        <rdfs:comment xml:lang="en">Any measurement made is definition of a datasource file.</rdfs:comment>
+        <rdfs:label xml:lang="en">is definition of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weather#locatedIn -->
 
 
     <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weather#locatedIn">
         <rdfs:comment xml:lang="en">Relation between Sensor and AdministrativeArea that locates it in a City and a Country.</rdfs:comment>
         <rdfs:label xml:lang="en">located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#observedInSeason -->
+
+
+    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weather#observedInSeason">
+        <rdfs:comment xml:lang="en">Weather period measurement observed in a specific season.</rdfs:comment>
+        <rdfs:label xml:lang="en">observed in season</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -357,6 +387,28 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#firstDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weather#firstDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment xml:lang="en">First date of a period</rdfs:comment>
+        <rdfs:label xml:lang="en">first Date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#lastDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weather#lastDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment xml:lang="en">Last date of a period</rdfs:comment>
+        <rdfs:label xml:lang="en">last Date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://saref.etsi.org/core/hasTimeStamp -->
 
 
@@ -461,6 +513,44 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DataSourceFiles -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DataSourceFiles">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#isDefinedBy"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Contains the type of format for the files analyzed.</rdfs:comment>
+        <rdfs:label xml:lang="en">DataSourceFiles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#EPWFile -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#EPWFile">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#DataSourceFiles"/>
+        <rdfs:comment xml:lang="en">Indicates if the file that have been analyzed is in format EPW from the Energy Plus Weather or the Climate OneBuilding.Weather services.</rdfs:comment>
+        <rdfs:label xml:lang="en">EPWFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#ExtremeWeatherPeriodMeasurement">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement"/>
+        <rdfs:comment xml:lang="en">Indicates if the type of weather for the period is Extreme, Max for Summer season and Min for Winter season.</rdfs:comment>
+        <rdfs:label xml:lang="en">ExtremeWeatherPeriodMeasurement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weather#Ground -->
 
 
@@ -494,11 +584,22 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#JSONWeatherFile -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#JSONWeatherFile">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#DataSourceFiles"/>
+        <rdfs:comment xml:lang="en">Indicates if the file that have been analyzed is in format JSON from the OpenWeatherMap service.</rdfs:comment>
+        <rdfs:label xml:lang="en">JSONWeatherFile</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weather#Precipitation -->
 
 
     <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Precipitation">
-        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon"/>
         <rdfs:comment>Any product of the condensation of atmospheric water vapour that falls under gravity from clouds. The main forms of precipitation include drizzle, rain, sleet, snow, ice pellets, graupel and hail.</rdfs:comment>
         <rdfs:label xml:lang="en">Precipitation</rdfs:label>
     </owl:Class>
@@ -527,6 +628,15 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Season -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Season">
+        <rdfs:label xml:lang="en">Season</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weather#SkyCover -->
 
 
@@ -549,17 +659,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#Storm -->
-
-
-    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Storm">
-        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
-        <rdfs:comment xml:lang="en">Any disturbed state of a body especially affecting its surface, and strongly implying a wind force. It may be marked by significant disruptions and lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">Storm</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#Temperature -->
 
 
@@ -567,6 +666,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
         <rdfs:comment xml:lang="en">The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density.</rdfs:comment>
         <rdfs:label xml:lang="en">Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#TypicalWeatherPeriodMeasurement">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement"/>
+        <rdfs:comment xml:lang="en">Indicates if the type of weather for the period is Typical. Average temperature period for season.</rdfs:comment>
+        <rdfs:label xml:lang="en">TypicalWeatherPeriodMeasurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#WeatherPeriodMeasurement">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Measurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#firstDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#lastDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Type of measurement for a period.</rdfs:comment>
+        <rdfs:label xml:lang="en">WeatherPeriodMeasurement</rdfs:label>
     </owl:Class>
     
 
@@ -649,6 +782,18 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <owl:Class rdf:about="https://saref.etsi.org/core/Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf"/>
+                <owl:someValuesFrom rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#DataSourceFiles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#observedInSeason"/>
+                <owl:someValuesFrom rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Season"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredIn"/>
@@ -842,6 +987,15 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hour -->
 
 
@@ -1007,32 +1161,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment xml:lang="en">An individual representing the average temperature for period from EPW.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight -->
 
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
         <rdfs:comment>An individual representing the weather property ceilling height.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#DataSourceAndUncertaintyFlags -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DataSourceAndUncertaintyFlags">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
-        <rdfs:comment>An individual representing the weather property data source and uncertainty flags.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1123,6 +1257,17 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialHorizontalRadiation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
         <rdfs:comment>An individual representing the radiation property extrzaterrestial horizontal radiation from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Fall -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Fall">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Season"/>
+        <rdfs:comment xml:lang="en">Autumn, also known as fall in North American English, is one of the four temperate seasons. Autumn marks the transition from summer to winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when the duration of daylight becomes noticeably shorter and the temperature cools considerably.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fall</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1236,26 +1381,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment xml:lang="en">An individual representing the max temperature for period from EPW.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment xml:lang="en">An individual representing the min temperature for period from EPW.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover -->
 
 
@@ -1276,25 +1401,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherCodes -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherCodes">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
-        <rdfs:comment>An individual representing the weather property present weather codes from EPW.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherObservation -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherObservation">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://bimerr.iot.linkeddata.es/def/weather#RelativeHumidity -->
 
 
@@ -1311,6 +1417,28 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#SnowDepth">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Snow"/>
         <rdfs:comment>An individual representing the snow property snow depth from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Spring -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Spring">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Season"/>
+        <rdfs:comment xml:lang="en">Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding summer. There are various technical definitions of spring, but local usage of the term varies according to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and vice versa. At the spring (or vernal) equinox, days and nights are approximately twelve hours long, with daytime length increasing and nighttime length decreasing as the season progresses.</rdfs:comment>
+        <rdfs:label xml:lang="en">Spring</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Summer -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Summer">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Season"/>
+        <rdfs:comment xml:lang="en">Summer is the hottest of the four temperate seasons, falling after spring and before autumn. At or around the summer solstice, the earliest sunrise and latest sunset occurs, the days are longest and the nights are shortest, with day length decreasing as the season progresses after the solstice. The date of the beginning of summer varies according to climate, tradition, and culture. When it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa.</rdfs:comment>
+        <rdfs:label xml:lang="en">Summer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1372,6 +1500,27 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#WindSpeed -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#WindSpeed">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
+        <rdfs:comment>An individual representing the wind property wind speed from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Winter -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Winter">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Season"/>
+        <rdfs:comment xml:lang="en">Winter is the coldest season of the year in polar and temperate zones (winter does not occur in most of the tropical zone). It occurs after autumn and before spring in each year. Winter is caused by the axis of the Earth in that hemisphere being oriented away from the Sun. Different cultures define different dates as the start of winter, and some use a definition based on weather. When it is winter in the Northern Hemisphere, it is summer in the Southern Hemisphere, and vice versa. In many regions, winter is associated with snow and freezing temperatures. The moment of winter solstice is when the Sun&apos;s elevation with respect to the North or South Pole is at its most negative value (that is, the Sun is at its farthest below the horizon as measured from the pole). The day on which this occurs has the shortest day and the longest night, with day length increasing and night length decreasing as the season progresses after the solstice. The earliest sunset and latest sunrise dates outside the polar regions differ from the date of the winter solstice, however, and these depend on latitude, due to the variation in the solar day throughout the year caused by the Earth&apos;s elliptical orbit (see earliest and latest sunrise and sunset).</rdfs:comment>
+        <rdfs:label xml:lang="en">Winter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance -->
 
 
@@ -1382,162 +1531,52 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperature -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#clouds -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperature">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property apparent temperature from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property apparent temperature high from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property apparent temperature low from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property apparent temperature max from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property apparent temperature min from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#cloudCover -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#cloudCover">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#clouds">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#SkyCover"/>
-        <rdfs:comment>An individual representing the sky cover property cloud cover from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the sky cover property clouds from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#moonPhase -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#feels_like -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#moonPhase">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
-        <rdfs:comment>An individual representing the weather property moon phase from Dark Sky API.</rdfs:comment>
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#feels_like">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the feels_like from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#nearestStormBearing -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#feels_like_day -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#nearestStormBearing">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Storm"/>
-        <rdfs:comment>An individual representing the storm property nearest storm bearing from Dark Sky API.</rdfs:comment>
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#feels_like_day">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the feels_like_day from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#nearestStormDistance -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#feels_like_night -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#nearestStormDistance">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Storm"/>
-        <rdfs:comment>An individual representing the storm property nearest storm distance from Dark Sky API.</rdfs:comment>
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#feels_like_night">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the feels_like_night from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#ozone -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipitation -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#ozone">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
-        <rdfs:comment>An individual representing the weather property ozone from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipAccumulation -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipAccumulation">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipitation">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
-        <rdfs:comment>An individual representing the precipitation property precipitation accumulation from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipIntensity -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipIntensity">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
-        <rdfs:comment>An individual representing the precipitation property precipitation intensity from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipIntensityError -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipIntensityError">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
-        <rdfs:comment>An individual representing the precipitation property precipitation intensity error from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
-        <rdfs:comment>An individual representing the precipitation property precipitation intensity max from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipProbability -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipProbability">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
-        <rdfs:comment>An individual representing the precipitation property precipitation probability from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipType -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipType">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
-        <rdfs:comment>An individual representing the precipitation property precipitation type from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the precipitation from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1547,96 +1586,107 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#pressure">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Pressure"/>
+        <rdfs:comment xml:lang="en">An individual representing the pressure from OpenWeatherMap.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperature -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#rain -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperature">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#rain">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment xml:lang="en">An individual representing the rain from OpenWeatherMap</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#snow -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#snow">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Snow"/>
+        <rdfs:comment xml:lang="en">An individual representing the snow from OpenWeatherMap</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temp -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temp">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property temperature from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the temp from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temp_day -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temp_day">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property temperature high from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the temp_day from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureLow -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temp_max -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureLow">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temp_max">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property temperature low from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the temp_max from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureMax -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temp_min -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureMax">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temp_min">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property temperature max from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the temperature property temp_min from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureMin -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temp_night -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureMin">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temp_night">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
-        <rdfs:comment>An individual representing the temperature property temperature min from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the temperature property temp_night from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#uvIndex -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#uvi -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#uvIndex">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#uvi">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
-        <rdfs:comment>An individual representing the radiation property uvIndex from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the radiation property uvi from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#windBearing -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#wind_deg -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#windBearing">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#wind_deg">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
-        <rdfs:comment>An individual representing the wind property wind bearing from Dark Sky API.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the wind property wind_deg from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#windGust -->
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#wind_gust -->
 
 
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#windGust">
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#wind_gust">
         <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
-        <rdfs:comment>An individual representing the wind property wind gust from Dark Sky API.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://bimerr.iot.linkeddata.es/def/weather#windSpeed -->
-
-
-    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#windSpeed">
-        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
-        <rdfs:comment>An individual representing the wind property wind speed from EPW.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An individual representing the wind property wind_gust from OpenWeatherMap</rdfs:comment>
     </owl:NamedIndividual>
 </rdf:RDF>
 
