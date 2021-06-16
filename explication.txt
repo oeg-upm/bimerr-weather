@@ -1,0 +1,7 @@
+We used SAREF ontology instead of SSN or SEAS Weather, because of the following reasons:
+
+On the one hand, looking at the models, we can see that SEAS Weather has 3 core modules, seas:FeatureOfInterest, seas:Evaluation and seas:System. First one, has the same classes of FeatureOfInterest and Property, and object properties than SAREF model. Second one, has the class Evaluation and his subclass AverageEvaluation that can be represented by saref:Measurement. Also, this second one, have a class of time time:TemporalEntity that can be representented with the data property of saref:Measurement, and geo:SpatialThing that we used it too at our Weather ontology. Last one, represent the connection between systems, but we only need one system/sensor, that can be implemented with saref:Device with its subclass saref:Sensor.
+
+On the other hand, SEAS Weather and SSN are relationed. SEAS Weather uses the class of SSN ssn:Procedure but we do not need this class because we do not need any procedure.
+
+Finally, also we do not use SSN ontology, due to the sosa:Observation we can replace it with saref:Measurement and we do not need sosa:ObservableProperty to unify the observation with a property, simply we can unify saref:Measurement with saref:Property. 
