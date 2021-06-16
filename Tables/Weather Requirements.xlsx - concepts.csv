@@ -1,0 +1,61 @@
+Concept,Other names/ids,Description
+Year,-,The year of the data
+Month,-,The month (1-12) for the data
+Day,-,The day (dependent on month) for the data
+Hour,-,Hour of the data (1-24)
+Minute,-,Minute field (1-60)
+Data Source and Uncertainty Flags,-,The data and uncertainty flags from various formats (usually show with each field) are consolidated in the E/E+ EPW format
+Dry Bulb Temperature,-,This is the dry bulb temperature in °C at the time indicated
+Dew Point Temperature,-,This is the dew point temperature in °C at the time indicated
+Relative Humidity,-,This is the Relative Humidity in percent at the time indicated
+Atmospheric Station Pressure,-,This is the station pressure in Pa at the time indicated
+Extraterrestial Horizontal Radiation,-,This is the Extraterrestial Horizontal Radiation in Wh/m2 
+Extraterrestial Direct Normal Radiation,-,This is the Extraterrestial Direct Normal Radiation Intensity in Wh/m2. (Amount of solar radiation in Wh/m2 received on a surface normal to the rays of the sun at the top of the atmosphere during the number of minutes preceding the time indicated)
+Horizontal Infrared Radiation Intensity,-,This is the Horizontal Infrared Radiation Intensity in Wh/m2.
+Global Horizontal Radiation,-,This is the Global Horizontal Radiation in Wh/m2 (Total amount of direct and diffuse solar radiation in Wh/m2 received on a horizontal surface during the number of minutes preceding the time indicated)
+Direct Normal Radiation,-,"This is the Direct Normal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2 received directly from the solar disk on a surface perpendicular to the sin's rays, durong the number of minutes predecing the time indicated)"
+Diffuse Horizontal Radiation,-,This is the Diffuse Horizontal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2) received from the sky (excluding the solar disk) on a horizontal surface during the number of minutes preceding the time indicated
+Global Horizontal Illuminance,-,This is the Global Horizontal Illuminance in lux. (Average total amount of direct and diffuse illuminance in hundreds of lux received on a horizontal surface during the number of minutes preceding the time indicated).
+Direct Normal Illuminance,-,"This is the Direct Normal Illuminance in lux. (Average amount of illuminance in hundreds of lux
+received directly from the solar disk on a surface perpendicular to the sun’s rays, during the number
+of minutes preceding the time indicated.)"
+ Diffuse Horizontal Illuminance,-,"This is the Diffuse Horizontal Illuminance in lux. (Average amount of illuminance in hundreds of
+lux received from the sky (excluding the solar disk) on a horizontal surface during the number of
+minutes preceding the time indicated.) "
+Zenith Luminance,-,"This is the Zenith Illuminance in Cd/m2. (Average amount of luminance at the sky’s zenith in tens
+of Cd/m2 during the number of minutes preceding the time indicated.)"
+ Wind Direction,-,"This is the Wind Direction in degrees where the convention is that North = 0.0, East = 90.0, South
+= 180.0, West = 270.0. (Wind direction in degrees at the time indicated. If calm, direction equals
+zero.) "
+Wind Speed,-,This is the wind speed in m/sec. (Wind speed at time indicated.)
+Total Sky Cover,-,"This is the value for total sky cover (tenths of coverage). (i.e. 1 is 1/10 covered. 10 is total coverage).
+(Amount of sky dome in tenths covered by clouds or obscuring phenomena at the hour indicated
+at the time indicated.)"
+Opaque Sky Cover,-,"This is the value for opaque sky cover (tenths of coverage). (i.e. 1 is 1/10 covered. 10 is total
+coverage). (Amount of sky dome in tenths covered by clouds or obscuring phenomena that prevent
+observing the sky or higher cloud layers at the time indicated.) "
+Visibility,-,This is the value for visibility in km. (Horizontal visibility at the time indicated.)
+Ceiling Height,-,"This is the value for ceiling height in m. (77777 is unlimited ceiling height. 88888 is cirroform
+ceiling.)"
+ Present Weather Observation,-,"Since the primary use of these
+fields (Present Weather Observation and Present Weather Codes) is for rain/wet surfaces, a missing
+observation field or a missing weather code implies no rain."
+Present Weather Codes,-,The present weather codes field is assumed to follow the TMY2 conventions for this field
+Precipitable Water,-,"This is the value for Precipitable Water in mm. (This is not rain - rain is inferred from the
+PresWeathObs field but a better result is from the Liquid Precipitation Depth field))"
+Aerosol Optical Depth,-,This is the value for Aerosol Optical Depth in thousandths
+ Snow Depth,-,"This is the value for Snow Depth in cm. This field is used to tell when snow is on the ground and,
+thus, the ground reflectance may change"
+Days Since Last Snowfall,-,This is the value for Days Since Last Snowfall
+Albedo,-,The ratio (unitless) of reflected solar irradiance to global horizontal irradiance
+ Liquid Precipitation Depth,-,"The amount of liquid precipitation (mm) observed at the indicated time for the period indicated
+in the liquid precipitation quantity field."
+ Liquid Precipitation Quantity,-,The period of accumulation (hr) for the liquid precipitation depth field.
+Latitude,-,Latitude where the measure was taken in degree minutes represented in decimal (i.e. 30 minutes is .5)
+Longitude,-,Longitude where the measure was taken in degree minutes represented in decimal (i.e. 30 minutes is .5)
+Altitude,-,Elevation where the measure was taken.
+Ground Conductivity,-,Conductivity of the soil.
+Ground Density,-,Density of the soil.
+Ground Specific Heat,-,Specific heat of the soil.
+Ground Temperature,-,Average ground temperature of  period.
+Ground Temperature Depth,-,Depth where the temperature of the ground was taken.

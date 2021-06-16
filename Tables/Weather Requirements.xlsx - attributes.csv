@@ -1,0 +1,55 @@
+Concept,Attribute,Description,"Value type expected(integer, boolean, float, list of specific values, etc.)",Max Cardinality,Ordering Needed (applicable for concepts with Max cardinality over 1),"Unit of measure(applicable only for ""measure"" data types)","Sensitive data (if applicable, e.g. personal data that need to be anonymized in BIF)",Timezone (applicable only for datetime data types),Related standard (if applicable)
+Data Source and Uncertainty Flags,data_flags,The data and uncertainty flags from various formats (usually show with each field) are consolidated in the E/E+ EPW format,string,-,-,-,-,-,-
+Dry Bulb Temperature,temperature / dry_bulb_data,This is the dry bulb temperature in °C at the time indicated,integer,-,-,°C,-,-,-
+Dew Point Temperature,temperature / dew_point_data,This is the dew point temperature in °C at the time indicated,integer,-,-,°C,-,-,-
+Relative Humidity,humidity / relative_humidity_data,This is the Relative Humidity in percent at the time indicated,integer,-,-,%,-,-,-
+Atmospheric Station Pressure,pressure / station_pressure_data,This is the station pressure in Pa at the time indicated,integer,-,-,Pa,-,-,-
+Extraterrestial Horizontal Radiation,radiation /extraterrestial_horizontal_radiation_data,This is the Extraterrestial Horizontal Radiation in Wh/m2 ,integer,-,-,Wh/m2,-,-,-
+Extraterrestial Direct Normal Radiation,radiation / extraterrestial_direct_radiation_data,This is the Extraterrestial Direct Normal Radiation Intensity in Wh/m2. (Amount of solar radiation in Wh/m2 received on a surface normal to the rays of the sun at the top of the atmosphere during the number of minutes preceding the time indicated),integer,-,-,Wh/m2,-,-,-
+Horizontal Infrared Radiation Intensity,radiation / horizontal_infrared_radiation_data,This is the Horizontal Infrared Radiation Intensity in Wh/m2.,integer,-,-,Wh/m2,-,-,-
+Global Horizontal Radiation,radiation / global_horizontal_radiation_data,This is the Global Horizontal Radiation in Wh/m2 (Total amount of direct and diffuse solar radiation in Wh/m2 received on a horizontal surface during the number of minutes preceding the time indicated),integer,-,-,Wh/m2,-,-,-
+Direct Normal Radiation,radiaton / direct_radiation_data,"This is the Direct Normal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2 received directly from the solar disk on a surface perpendicular to the sin's rays, durong the number of minutes predecing the time indicated)",integer,-,-,Wh/m2,-,-,-
+Diffuse Horizontal Radiation,radiation / diffuse_horizontal_radiation_data,This is the Diffuse Horizontal Radiation in Wh/m2. (Amount of solar radiation in Wh/m2) received from the sky (excluding the solar disk) on a horizontal surface during the number of minutes preceding the time indicated,integer,-,-,Wh/m2,-,-,0
+Global Horizontal Illuminance,illumninance / global_horizontal_illuminance_data,This is the Global Horizontal Illuminance in lux. (Average total amount of direct and diffuse illuminance in hundreds of lux received on a horizontal surface during the number of minutes preceding the time indicated).,integer,-,-,lux,-,-,-
+Direct Normal Illuminance,illuminance / direct_illuminance_data,"This is the Direct Normal Illuminance in lux. (Average amount of illuminance in hundreds of lux
+received directly from the solar disk on a surface perpendicular to the sun’s rays, during the number
+of minutes preceding the time indicated.)",integer,-,-,lux,-,-,-
+ Diffuse Horizontal Illuminance,illuminance / diffuse_horizontal_illuminance_data,"This is the Diffuse Horizontal Illuminance in lux. (Average amount of illuminance in hundreds of
+lux received from the sky (excluding the solar disk) on a horizontal surface during the number of
+minutes preceding the time indicated.) ",integer,-,-,lux,-,-,-
+Zenith Luminance,illuminance / zenith_luminance_data,"This is the Zenith Illuminance in Cd/m2. (Average amount of luminance at the sky’s zenith in tens
+of Cd/m2 during the number of minutes preceding the time indicated.)",integer,-,-,Cd/m2,-,-,-
+ Wind Direction,wind / wind_direction_data,"This is the Wind Direction in degrees where the convention is that North = 0.0, East = 90.0, South
+= 180.0, West = 270.0. (Wind direction in degrees at the time indicated. If calm, direction equals
+zero.) ",integer,-,-,degrees(°),-,-,-
+Wind Speed,wind / wind_speed_data,This is the wind speed in m/sec. (Wind speed at time indicated.),integer,-,-,m/sec,-,-,-
+Total Sky Cover,sky_cover / total_sky_cover_data,"This is the value for total sky cover (tenths of coverage). (i.e. 1 is 1/10 covered. 10 is total coverage).
+(Amount of sky dome in tenths covered by clouds or obscuring phenomena at the hour indicated
+at the time indicated.)",integer,-,-,tenths of coverage,-,-,-
+Opaque Sky Cover,sky_cover / opaque_sky_cover_data,"This is the value for opaque sky cover (tenths of coverage). (i.e. 1 is 1/10 covered. 10 is total
+coverage). (Amount of sky dome in tenths covered by clouds or obscuring phenomena that prevent
+observing the sky or higher cloud layers at the time indicated.) ",integer,-,-,tenths of coverage,-,-,-
+Visibility,visibility_data,This is the value for visibility in km. (Horizontal visibility at the time indicated.),integer,-,-,km,-,-,-
+Ceiling Height,ceilling_height_data,"This is the value for ceiling height in m. (77777 is unlimited ceiling height. 88888 is cirroform
+ceiling.)",integer,-,-,m,-,-,-
+ Present Weather Observation,weather_observation_data,"Since the primary use of these
+fields (Present Weather Observation and Present Weather Codes) is for rain/wet surfaces, a missing
+observation field or a missing weather code implies no rain.",string,-,-,-,-,-,-
+Present Weather Codes,weather_codes_data,The present weather codes field is assumed to follow the TMY2 conventions for this field,string,-,-,-,-,-,-
+Precipitable Water,precipitation_data,This is the value for Precipitable Water in mm. (This is not rain - rain is inferred from the PresWeathObs field but a better result is from the Liquid Precipitation Depth field)),integer,-,-,mm,-,-,-
+Aerosol Optical Depth,aerosol_depth_data,This is the value for Aerosol Optical Depth in thousandths,integer,-,-,thousandths,-,-,-
+ Snow Depth,snow_depth_data,"This is the value for Snow Depth in cm. This field is used to tell when snow is on the ground and,
+thus, the ground reflectance may change",integer,-,-,cm,-,-,-
+Days Since Last Snowfall,last_snowfall_data,This is the value for Days Since Last Snowfall,integer,-,-,days,-,-,-
+Albedo,albedo_data,The ratio (unitless) of reflected solar irradiance to global horizontal irradiance,string,-,-,-,-,-,-
+ Liquid Precipitation Depth,precipitation / liquid_precipitation_depth_data,"The amount of liquid precipitation (mm) observed at the indicated time for the period indicated
+in the liquid precipitation quantity field.",integer,-,-,mm,-,-,1.5
+ Liquid Precipitation Quantity,precipitation / liquid_precipitation_quantity_data,The period of accumulation (hr) for the liquid precipitation depth field,integer,-,-,hours,-,-,-
+Latitude,latitude_data,Latitude where the measure was taken in degree minutes represented in decimal (i.e. 30 minutes is .5),integer,-,-,-,-,-,-
+Longitude,longitude_data,Longitude where the measure was taken in degree minutes represented in decimal (i.e. 30 minutes is .5),integer,-,-,-,-,-,-
+Altitude,altitude_data,Elevation where the measure was taken.,integer,-,-,-,-,-,-
+Ground Conductivity,ground/ground_conductivity_data,Conductivity of the soil.,integer,-,-,-,-,-,-
+Ground Density,ground/ground_density_data,Density of the soil.,integer,-,-,-,-,-,-
+Ground Specific Heat,ground/ground_specific_heat_data,Specific heat of the soil.,integer,-,-,-,-,-,-
+Ground Temperature,ground/ground_temperature_data,Average ground temperature of  period.,integer,-,-,-,-,-,-
+Ground Temperature Depth,ground/ground_temperature_depth_data,Depth where the temperature of the ground was taken.,integer,-,-,-,-,-,-

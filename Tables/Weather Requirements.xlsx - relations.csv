@@ -1,0 +1,36 @@
+Concept,Relation,Description,"Target object (should appear in the ""Concept list"")",Min Cardinality,Max Cardinality,Unit of Measure (if applicable),"(Ignore if not sure or not applicable)
+
+Other Characteristics:
+
+symmetric, transitive, has some special behaviour or meaning?
+
+Etc.",Needed by,standards
+Observation,sosa:madeBySensor,-,Sensor,-,,,,,sosa
+,sosa:hasFeatureOfInterest,,FeatureOfInterest,,,,,,
+,sosa:observedProperty,,ObservableProperty,,,,,,
+FeatureOfInterest,sosa:isFeatureOfInterest,-,Observation,-,,,,,saref
+,saref:hasProperty,,Property,,,,,,
+,saref:hasMeasurement,,Measurement,,,,,,
+WeatherProperty,<<subclass_of>>,-,ObservableProperty,-,,,,,weat
+ObservableProperty,<<subclass_of>>,-,Property,-,,,,,sosa
+,sosa:isObservedBy,,Sensor,,,,,,
+Property,saref:isPropertyOf,-,FeatureOfInterest,-,,,,,saref
+,saref:isMeasuredByDevice,,Device,,,,,,
+,saref:isControlledByDevice,,Device,,,,,,
+,"saref:
+RelatesToMeasurement",,Measurement,,,,,,
+Measurement,saref;isMeasurementOf,-,FeatureOfInterest,-,,,,,saref
+,saref:relatesToProperty,,Property,,,,,,
+,saref:measurementMadeBy,,Device,,,,,,
+,saref;isMeasuredIn,,UnitOfMeasure,,,,,,
+Sensor,<<subclass_of>>,-,Device,-,,,,,sosa
+,sosa:observes,,ObservableProperty,,,,,,
+,sosa:madeObservation,,Observation,,,,,,
+Device,saref:measuresProperty,-,Property,-,,,,,saref
+,saref:controlsProperty,,Property,,,,,,
+,saref:makeMeasurement,,Measurement,,,,,,
+,geo:location,,SpatialThing,,,,,,
+,weat:locatedInCity,,AdministrativeArea,,,,,,
+Point,<<subclass_of>>,-,SpatialThing,-,,,,,geo
+City,<<subclass_of>>,-,AdministrativeArea,-,,,,,s4city
+Country,<<subclass_of>>,-,AdministrativeArea,-,,,,,s4city
